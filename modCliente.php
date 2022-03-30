@@ -22,7 +22,7 @@ include "Conexion_BD.php"
             <div class="row">
                 <div class="col-md-8">
                     <label class="visually-hidden" for="autoSizingSelect">Buscar</label>
-                    <input type="text" id="txtBuscar" class="form-control" placeholder="Buscar Cliente">
+                    <input type="text" id="txtBuscar" name="Buscar" class="form-control" placeholder="Buscar Cliente">
                     <button type="submit" id="Buscar" class="btn btn-primary">Buscar</button>
                 </div>
                 <div id="tabla">
@@ -42,25 +42,21 @@ include "Conexion_BD.php"
                         </thead>
                         <tbody>
                             <?php
-                                $sql="SELECT * FROM  clientes"; 
-                                $result=mysqli_query($conexion,$sql);
-                                if(!$result){
-                                    var_dump(mysqli_error($conexion));
-                                    exit;
-                                }
-                                while ($fila= mysqli_fetch_assoc($result)){
-                                    echo "
-                                    <tr>
-                                        <td>{$fila['Id_Cliente']}</td>
-                                        <td>{$fila['Num_Documento']}</td>
-                                        <td>{$fila['Nombre']}</td>
-                                        <td>{$fila['Apellido']}</td>
-                                        <td>{$fila['Correo']}</td>
-                                        <td>{$fila['Direccion']}</td>
-                                        <td>{$fila['Telefono']}</td>
-                                        <td>{$fila['Tipo_Cliente']}</td>
-                                        <td>{$fila['Estado_Cliente']}</td>
-                                    </tr>";
+                            include "Leer.php";
+                            
+                            while ($fila= mysqli_fetch_assoc($result)){
+                                echo "
+                                <tr>
+                                    <td>{$fila['Id_Cliente']}</td>
+                                    <td>{$fila['Num_Documento']}</td>
+                                    <td>{$fila['Nombre']}</td>
+                                    <td>{$fila['Apellido']}</td>
+                                    <td>{$fila['Correo']}</td>
+                                    <td>{$fila['Direccion']}</td>
+                                    <td>{$fila['Telefono']}</td>
+                                    <td>{$fila['Tipo_Cliente']}</td>
+                                    <td>{$fila['Estado_Cliente']}</td>
+                                </tr>";
                                     }
                             ?>
                         </tbody>
