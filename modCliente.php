@@ -62,7 +62,6 @@ include "Conexion_BD.php"
                                         <td>{$fila['Estado_Cliente']}</td>
                                     </tr>";
                                     }
-                                
                             ?>
                         </tbody>
                     </table>
