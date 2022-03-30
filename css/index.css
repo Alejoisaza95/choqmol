@@ -1,0 +1,38 @@
+body {
+  background: linear-gradient(to bottom, rgb(43, 201, 38), white);
+  background: linear-gradient(to left, rgb(70, 116, 68), rgb(161, 212, 119));
+}
+h1 {
+  text-align: center;
+  font-size: 120px;
+  color: aliceblue;
+}
+.form {
+  float: right;
+}
+#formulario_login {
+  text-align: left;
+  font-size: 30px;
+  margin-left: 0%;
+  margin-right: 25%;
+  margin-top: -25%;
+  color: aliceblue;
+}
+img {
+  margin-left: 20%;
+  border-bottom-left-radius: 5%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-style: outset;
+  border-color: rgb(159, 255, 188);
+}
+
+#Ingresar {
+  font-size: 90%;
+  background-color: rgb(8, 117, 54);
+}
+#Crear_Usuario {
+  font-size: 90%;
+  background-color: rgb(8, 117, 54);
+}

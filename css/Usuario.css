@@ -1,0 +1,85 @@
+body {
+  background: linear-gradient(to bottom, rgb(90, 230, 85), white);
+  background: linear-gradient(to left, rgb(70, 116, 68), rgb(161, 212, 119));
+}
+#bodymodUsuario {
+  background: linear-gradient(to bottom, rgb(90, 230, 85), rgb(255, 255, 255));
+  background: linear-gradient(to left, rgb(209, 240, 209), rgb(191, 221, 166));
+}
+#tituloCrear {
+  text-align: center;
+  font-size: 120px;
+  color: aliceblue;
+}
+h1 {
+  text-align: center;
+  font-size: 100px;
+  color: rgb(24, 63, 37);
+}
+.form{
+  float: right;
+}
+#formulario_crearUsuario {
+  text-align: left;
+  font-size: 25px;
+  margin-left: 600px;
+  margin-right: 10px;
+  margin-top: -400px;
+  color: rgb(35, 66, 47);
+}
+#formulario_modUsuario {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-right: 50px;
+  color: rgb(35, 66, 47);
+}
+img {
+  margin-left: 150px;
+  margin-top: 20px;
+  border-bottom-left-radius: 5%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-style: outset;
+  border-color: rgb(159, 255, 188);
+}
+
+#Regresar {
+  font-size: 90%;
+  background-color: rgb(8, 117, 54);
+  margin-bottom: 15px;
+}
+#Crear_Usuario {
+  font-size: 90%;
+  background-color: rgb(8, 117, 54);
+  margin-bottom: 15px;
+}
+#tabla {
+  background-color: aliceblue;
+}
+#Cancelar {
+  font-size: 90%;
+  background-color: rgb(8, 117, 54);
+  margin-left: 480px;
+  margin-top: 15px;
+}
+#Modificar_Usuario {
+  font-size: 90%;
+  background-color: rgb(8, 117, 54);
+  margin-top: 15px;
+}
+#btnBuscar {
+  font-size: 30px;
+  background-color: rgb(8, 117, 54);
+  margin-left: 0px;
+  float: right;
+  margin-top: -50px;
+  margin-right: -150px;
+  margin-bottom: 15px;
+}
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
