@@ -18,7 +18,7 @@ include "Conexion_BD.php"
 <body>
     <div id="modCliente" class="contenedor">
         <h1>Modificar Cliente</h1>
-        <form id="formulario_modCliente" class="form" action="index.html" method="post">
+        <form id="formulario_modCliente" class="form" action="modCliente.php" method="post">
             <div class="row">
                 <div class="col-md-8">
                     <label class="visually-hidden" for="autoSizingSelect">Buscar</label>
