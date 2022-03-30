@@ -42,11 +42,15 @@ include "Conexion_BD.php"
                         </thead>
                         <tbody>
                             <?php
-                                $sql="SELECT * FROM 'clientes'"; 
-                                $resultado=mysqli_query($conexion,$sql);
-                                while ($fila= mysqli_fetch_assoc($resultado)){
-                                        echo "
-                                        <tr>
+                                $sql="SELECT * FROM  clientes"; 
+                                $result=mysqli_query($conexion,$sql);
+                                if(!$result){
+                                    var_dump(mysqli_error($conexion));
+                                    exit;
+                                }
+                                while ($fila= mysqli_fetch_assoc($result)){
+                                    echo "
+                                    <tr>
                                         <td>{$fila['Id_Cliente']}</td>
                                         <td>{$fila['Num_Documento']}</td>
                                         <td>{$fila['Nombre']}</td>
@@ -56,9 +60,9 @@ include "Conexion_BD.php"
                                         <td>{$fila['Telefono']}</td>
                                         <td>{$fila['Tipo_Cliente']}</td>
                                         <td>{$fila['Estado_Cliente']}</td>
-                                        </tr>";
+                                    </tr>";
                                     }
-                                    ;
+                                
                             ?>
                         </tbody>
                     </table>
