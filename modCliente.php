@@ -42,10 +42,10 @@ include "Conexion_BD.php"
                         </thead>
                         <tbody>
                             <?php
-                                $sql="Select * FROM 'usuarios'"; 
+                                $sql="SELECT * FROM 'clientes'"; 
                                 $resultado=mysqli_query($conexion,$sql);
                                 if($resultado){
-                                    while ($fila=msqli_fetch_assoc($result)){
+                                    while ($fila=msqli_fetch_assoc($resultado)){
                                         $id_cliente=$fila['Id_Cliente'];
                                         $documento_cliente=$fila['Num_Documento'];
                                         $nombre_cliente=$fila['Nombre'];
@@ -56,7 +56,7 @@ include "Conexion_BD.php"
                                         $tipo_cliente=$fila['Tipo_Cliente'];
                                         $estado_cliente=$fila['Estado_Cliente']; 
                                         echo '<tr>
-                                        <th scope="row">'.$id_cliente.'</th>
+                                        <th scope="fila">'.$id_cliente.'</th>
                                         <td>'.$documento_cliente.'</td>
                                         <td>'.$nombre_cliente.'</td>
                                         <td>'.$apellido_cliente.'</td>
@@ -68,13 +68,9 @@ include "Conexion_BD.php"
                                         </tr>';
                                     }
                                     ;
-                                    echo $fila['Nombre'];
                                 }
-
                             ?>
-
                         </tbody>
-
                     </table>
                 </div>
             <div class="row">
