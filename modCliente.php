@@ -55,7 +55,17 @@ include "Conexion_BD.php"
                                         $tel_cliente=$fila['Telefono'];
                                         $tipo_cliente=$fila['Tipo_Cliente'];
                                         $estado_cliente=$fila['Estado_Cliente']; 
-                                        
+                                        echo '<tr>
+                                        <th scope="row">'.$id_cliente.'</th>
+                                        <td>'.$documento_cliente.'</td>
+                                        <td>'.$nombre_cliente.'</td>
+                                        <td>'.$apellido_cliente.'</td>
+                                        <td>'.$correo_cliente.'</td>
+                                        <td>'.$direc_cliente.'</td>
+                                        <td>'.$tel_cliente.'</td>
+                                        <td>'.$tipo_cliente.'</td>
+                                        <td>'.$estado_cliente.'</td>
+                                        </tr>';
                                     }
                                     ;
                                     echo $fila['Nombre'];
