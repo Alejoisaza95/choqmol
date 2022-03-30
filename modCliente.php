@@ -44,31 +44,21 @@ include "Conexion_BD.php"
                             <?php
                                 $sql="SELECT * FROM 'clientes'"; 
                                 $resultado=mysqli_query($conexion,$sql);
-                                if($resultado){
-                                    while ($fila=msqli_fetch_assoc($resultado)){
-                                        $id_cliente=$fila['Id_Cliente'];
-                                        $documento_cliente=$fila['Num_Documento'];
-                                        $nombre_cliente=$fila['Nombre'];
-                                        $apellido_cliente=$fila['Apellido'];
-                                        $correo_cliente=$fila['Correo'];
-                                        $direc_cliente=$fila['Direccion'];
-                                        $tel_cliente=$fila['Telefono'];
-                                        $tipo_cliente=$fila['Tipo_Cliente'];
-                                        $estado_cliente=$fila['Estado_Cliente']; 
-                                        echo '<tr>
-                                        <th scope="fila">'.$id_cliente.'</th>
-                                        <td>'.$documento_cliente.'</td>
-                                        <td>'.$nombre_cliente.'</td>
-                                        <td>'.$apellido_cliente.'</td>
-                                        <td>'.$correo_cliente.'</td>
-                                        <td>'.$direc_cliente.'</td>
-                                        <td>'.$tel_cliente.'</td>
-                                        <td>'.$tipo_cliente.'</td>
-                                        <td>'.$estado_cliente.'</td>
-                                        </tr>';
+                                while ($fila= mysqli_fetch_assoc($resultado)){
+                                        echo "
+                                        <tr>
+                                        <td>{$fila['Id_Cliente']}</td>
+                                        <td>{$fila['Num_Documento']}</td>
+                                        <td>{$fila['Nombre']}</td>
+                                        <td>{$fila['Apellido']}</td>
+                                        <td>{$fila['Correo']}</td>
+                                        <td>{$fila['Direccion']}</td>
+                                        <td>{$fila['Telefono']}</td>
+                                        <td>{$fila['Tipo_Cliente']}</td>
+                                        <td>{$fila['Estado_Cliente']}</td>
+                                        </tr>";
                                     }
                                     ;
-                                }
                             ?>
                         </tbody>
                     </table>
