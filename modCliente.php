@@ -64,50 +64,11 @@ include "Conexion_BD.php"
                 </div>
             <div class="row">
                 
-                <div class="col-md-6">
-                    <label class="visually-hidden" for="autoSizingSelect">Nombre</label>
-                    <input type="text" id="Nombre" class="form-control" placeholder="Nombre">
-                </div>
-                <div class="col-md-6">
-                    <label class="visually-hidden" for="autoSizingSelect">Apellido</label>
-                    <input type="text" id="Apellido" class="form-control" placeholder="Apellido">
-                </div>
-                <div class="col-md-6">
-                    <label class="visually-hidden" for="autoSizingSelect">Número de documento</label>
-                    <input type="text" id="Documento" class="form-control" placeholder="Número de documento">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Correo</label>
-                    <input type="email" class="form-control" id="Correo" placeholder="Correo">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputAddress" class="form-label">Dirección</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="Dirección">
-                </div>
-                <div class="col-md-6">
-                    <label class="visually-hidden" for="autoSizingSelect">Teléfono</label>
-                    <input type="text" id="Telefono" class="form-control" placeholder="Teléfono">
-                </div>
-                <div id="tipoCliente" class="col-md-6">
-                    <label class="visually-hidden" for="autoSizingSelect">Tipo de cliente</label>
-                    <select class="form-select" id="autoSizingSelect">
-                        <option selected>Seleccione</option>
-                        <option value="1">Mayorista</option>
-                        <option value="2">De tal</option>
-                    </select>
-                </div>
-                <div id="estadoCliente" class="col-md-6">
-                    <label class="visually-hidden" for="autoSizingSelect">Estado</label>
-                    <select class="form-select" id="autoSizingSelect">
-                        <option selected>Seleccione</option>
-                        <option value="1">Activo</option>
-                        <option value="2">Inactivo</option>
-                    </select>
-                </div>
+        
             </div>    
             <br><div>
             <button type="submit" id="Cancelar" class="btn btn-primary">Cancelar</button>
-            <button type="submit" id="Modificar_Cliente" class="btn btn-primary">Guardar Cambios</button>
+            <button type="submit" id="Modificar_Cliente" class="btn btn-primary">Modificar</button>
             </div>
         </form>
     </div>
