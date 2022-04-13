@@ -68,7 +68,7 @@ include "Conexion_BD.php"
             </div>    
             <br><div>
             <button type="submit" id="Cancelar" class="btn btn-primary">Cancelar</button>
-            <button type="submit" id="Modificar_Cliente" class="btn btn-primary">Modificar</button>
+            <button type="submit" id="Modificar_Cliente" class="btn btn-primary"><a href="actualizar.php">Modificar</a></button>
             </div>
         </form>
     </div>
