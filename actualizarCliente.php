@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actualizar Cliente</title>
+    <title>Modificar Cliente</title>
     <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
@@ -13,12 +13,11 @@
 </head>
 
 <body>
-<div id="modCliente" class="contenedor">
-        <h1>Actualizar Cliente</h1>
-        <form id="formulario_modCliente" class="form" action="modCliente.php" method="post">
+    <div id="modCliente" class="contenedor">
+        <h1>Modificar Cliente</h1>
+        <form id="formulario_modCliente" class="form" action="index.html" method="post">
+            <div class="row">
 
-        <div class="row">
-                
                 <div class="col-md-6">
                     <label class="visually-hidden" for="autoSizingSelect">Nombre</label>
                     <input type="text" id="Nombre" class="form-control" placeholder="Nombre">
@@ -59,6 +58,15 @@
                         <option value="2">Inactivo</option>
                     </select>
                 </div>
-
+            </div>
+            <br>
+            <div>
+                <button type="submit" id="Cancelar" class="btn btn-primary">Cancelar</button>
+                <button type="submit" id="Modificar_Cliente" class="btn btn-primary">Guardar</button>
+            </div>
+        </form>
+    </div>
 
 </body>
+
+</html>
