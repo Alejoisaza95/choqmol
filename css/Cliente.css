@@ -1,19 +1,24 @@
+/* Color de la pagína */
 body {
   background: linear-gradient(to bottom, rgb(90, 230, 85), rgb(255, 255, 255));
   background: linear-gradient(to left, rgb(209, 240, 209), rgb(191, 221, 166));
 }
+/* Títulos */
 h1 {
   text-align: center;
   font-size: 100px;
   color: rgb(18, 65, 26);
 }
+/* Formato clase .form */
 .form {
   float: right;
   margin-left: 100px;
-  margin-right: 20px;
+  margin-right: 50px;
   font-size: 30px;
   color: rgb(22, 70, 40);
+  padding: 5px;
 }
+/* Formaro formulario */
 #formulario_modCliente {
   text-align: left;
   font-size: 20px;
@@ -21,14 +26,34 @@ h1 {
   margin-right: 50px;
   color: rgb(35, 66, 47);
 }
-#Regresar {
-  font-size: 90%;
-  background-color: rgb(8, 117, 54);
-  margin-left: 450px;
+/* Formato subtitulos */
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
-#Crear_Usuario {
-  font-size: 90%;
-  background-color: rgb(8, 117, 54);
+/* Botones */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-style: groove;
+  border-color: rgb(182, 247, 202); 
+}
+.btnCrear_Cliente, #Crear_Cliente{
+  float: left;
+  margin-bottom: 5px;
+  margin-top: 25px;
+  margin-left: 200px;
+}
+.btn_RegresarCliente, #Regresar{
+  float: right;
+  margin-bottom: 5px;
+  margin-top: 25px;
+  margin-right: 300px;
 }
 #Cancelar {
   font-size: 25px;
@@ -51,17 +76,12 @@ h1 {
   margin-top: -40px;
   margin-right: -100px;
 }
-label {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
 #tabla {
   background-color: aliceblue;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: medium;
 }
-
 #Atras {
   background-color: rgb(8, 117, 54);
   font-size: large;

@@ -14,21 +14,31 @@
 
 <body>
   <div id="inicio" class="contenedor">
+    <!-- Título de la ventana -->
     <h1>Bienvenido</h1>
+    <!-- Imagen de la ventana Login -->
     <div id="logo" class="">
       <img src="img/logo.jpg" alt="">
     </div>
+    <!-- Formulario login -->
     <form id="formulario_login" class="form" action="login.php" method="post">
+      <!-- Campo Usuario -->
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Usuario</label>
         <input type="text" class="form-control" name="Usuario" id="id_Usuario" aria-describedby="emailHelp">
       </div>
+      <!-- Campo Clave o Contraseña -->
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Clave</label>
         <input type="password" class="form-control" name="Clave" id="idClave">
       </div>
-      <button type="submit" name="Ingresar" id="idIngresar" class="btn btn-primary">Ingresar</button>
-      <button type="submit" name="Crear_Usuario" id="idCrear_Usuario" class="btn btn-primary">Crear Usuario</button>
+      <!-- Botones -->
+      <div>
+        <!-- Ingresar -->
+        <button type="submit" name="Ingresar" id="idIngresar" >Ingresar</button>
+        <!-- Crear Usuario -->
+        <button type="submit" name="Crear_Usuario" id="idCrear_Usuario" >Crear Usuario</button>
+      </div>
     </form>
   </div>
 </body>

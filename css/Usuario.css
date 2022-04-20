@@ -1,41 +1,39 @@
+/* Color de ventana Usuario */
 body {
-  background: linear-gradient(to bottom, rgb(90, 230, 85), white);
+  background: linear-gradient(to bottom, rgb(193, 243, 191), white);
   background: linear-gradient(to left, rgb(70, 116, 68), rgb(161, 212, 119));
 }
-#bodymodUsuario {
-  background: linear-gradient(to bottom, rgb(90, 230, 85), rgb(255, 255, 255));
-  background: linear-gradient(to left, rgb(209, 240, 209), rgb(191, 221, 166));
-}
+
+/* Formato de título de la ventana Crear Usuario */
 #tituloCrear {
   text-align: center;
   font-size: 120px;
   color: aliceblue;
 }
+/* Títulos */
 h1 {
   text-align: center;
   font-size: 100px;
   color: rgb(24, 63, 37);
 }
-.form{
+
+/* Formato del formulario Crear Usuario */
+.form {
   float: right;
+  padding: 5px;
+  margin: 5px;
 }
 #formulario_crearUsuario {
   text-align: left;
   font-size: 25px;
-  margin-left: 600px;
-  margin-right: 10px;
+  margin-left: 550px;
+  margin-right: 30px;
   margin-top: -400px;
   color: rgb(35, 66, 47);
 }
-#formulario_modUsuario {
-  text-align: left;
-  font-size: 20px;
-  margin-left: 100px;
-  margin-right: 50px;
-  color: rgb(35, 66, 47);
-}
+/* Imagen de la ventana Crear Usuario */
 img {
-  margin-left: 150px;
+  margin-left: 130px;
   margin-top: 20px;
   border-bottom-left-radius: 5%;
   border-top-left-radius: 5%;
@@ -44,16 +42,38 @@ img {
   border-style: outset;
   border-color: rgb(159, 255, 188);
 }
-
-#Regresar {
-  font-size: 90%;
-  background-color: rgb(8, 117, 54);
-  margin-bottom: 15px;
+/* Subtitulos (Label) del formulario Crear Usuario */
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
-#Crear_Usuario {
-  font-size: 90%;
-  background-color: rgb(8, 117, 54);
-  margin-bottom: 15px;
+/* Botones de la ventana Crear Usuario */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-top: 50px;
+  border-style: groove;
+  border-color: rgb(182, 247, 202);
+}
+
+/* Color de ventana Modificar Usuario */
+#bodymodUsuario {
+  background: linear-gradient(to bottom, rgb(90, 230, 85), rgb(255, 255, 255));
+  background: linear-gradient(to left, rgb(209, 240, 209), rgb(191, 221, 166));
+}
+/* Formato del formulario Modificar Usuario */
+#formulario_modUsuario {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-right: 50px;
+  color: rgb(35, 66, 47);
 }
 #tabla {
   background-color: aliceblue;
@@ -77,9 +97,5 @@ img {
   margin-top: -50px;
   margin-right: -150px;
   margin-bottom: 15px;
-}
-label {
-  margin-top: 10px;
-  margin-bottom: 5px;
 }
 
