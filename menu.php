@@ -24,20 +24,20 @@
           <li><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
           <li><a class="nav-link" href="#">Clientes</a>
             <ul>
-              <li><a class="nav-link" href="/crearCliente.html">Crear Cliente</a></li>
-              <li><a class="nav-link" href="/modCliente.html">Modificar Clientes</a></li>
-              <li><a class="nav-link" href="/gestionarCliente.html">Gestión de clientes</a></li>
+              <li><a class="nav-link" href="/choqmol/crearCliente.php">Crear Cliente</a></li>
+              <li><a class="nav-link" href="/choqmol/listadoClientes.php">Modificar Clientes</a></li>
+              <li><a class="nav-link" href="/choqmol/gestionarCliente.php">Gestión de clientes</a></li>
             </ul>
           </li>
           <li><a class="nav-link" href="#">Usuario</a>
             <ul>
-              <li><a class="nav-link" href="/crearUsuario.html">Crear Usuarios</a></li>
-              <li><a class="nav-link" href="/modUsuario.html">Modificar Usuarios</a></li>
+              <li><a class="nav-link" href="/choqmol/crearUsuario.php">Crear Usuarios</a></li>
+              <li><a class="nav-link" href="/choqmol/modUsuario.php">Modificar Usuarios</a></li>
             </ul>
           </li>
         </ul>
         <div class="Salir">
-          <button type="submit" id="Salir_Sistema" class="btn btn-primary">Cerrar Sesión</button>
+          <button onclick="location.href='/choqmol/index.php'" type="submit" name="Cerrar_Sesion"  id="Salir_Sistema" class="btn btn-primary">Cerrar Sesión</button <?php include 'Cierre.php' ?> >
         </div>
       </nav>
     </div>

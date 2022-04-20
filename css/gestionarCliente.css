@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(to bottom, rgb(90, 230, 85), rgb(255, 255, 255));
+    background: linear-gradient(to left, rgb(209, 240, 209), rgb(191, 221, 166));
+  }
+  h1 {
+    text-align: center;
+    font-size: 100px;
+    color: rgb(18, 65, 26);
+  }
+  .form {
+    float: right;
+    margin-left: 100px;
+    margin-right: 20px;
+    font-size: 30px;
+    color: rgb(22, 70, 40);
+  }
+  #formulario_gestionarCliente {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 50px;
+    color: rgb(35, 66, 47);
+  }
+  #Regresar {
+    font-size: 90%;
+    background-color: rgb(8, 117, 54);
+    margin-left: 450px;
+  }
+  #Cancelar {
+    font-size: 90%;
+    background-color: rgb(8, 117, 54);
+    margin-left: 490px;
+    margin-top: -45px;
+  }
+  #Guardar_Comentario {
+    font-size: 90%;
+    background-color: rgb(8, 117, 54);
+    margin-top: -45px;
+  }
+  #Buscar {
+    font-size: 30px;
+    background-color: rgb(8, 117, 54);
+    margin-left: 0px;
+    float: right;
+    margin-top: -50px;
+    margin-right: -150px;
+  }
+  label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  #tabla {
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }

@@ -73,11 +73,11 @@ include("registrar_Cliente.php");
             </div>
             <!-- Botones -->
             <div>
-                <!-- Crear Usuario -->
-                <button type="submit" name="Crear_Cliente" class="btnCrear_Cliente">Crear Cliente</button>
+                <!-- Crear Cliente -->
+                <button type="submit" name="Crear_Cliente" class="btnCrear_Cliente">Guardar Cliente</button>
             </div>
-            <!-- Regresar a Login -->
-            <button onclick="location.href='/choqmol/index.php'" type="submit" name="Regresar" class="btn_RegresarCliente">Regresar</button>
+            <!-- Regresar a Menu -->
+            <button onclick="location.href='/choqmol/menu.php'" type="submit" name="Regresar" class="btn_RegresarCliente">Regresar</button>
     </div>
     </form>
     </div>

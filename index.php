@@ -25,19 +25,19 @@
       <!-- Campo Usuario -->
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Usuario</label>
-        <input type="text" class="form-control" name="Usuario" id="id_Usuario" aria-describedby="emailHelp">
+        <input type="text" class="form-control" name="Usuario" id="id_Usuario" aria-describedby="emailHelp" required> 
       </div>
       <!-- Campo Clave o Contraseña -->
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Clave</label>
-        <input type="password" class="form-control" name="Clave" id="idClave">
+        <input type="password" class="form-control" name="Clave" id="idClave" required>
       </div>
       <!-- Botones -->
       <div>
         <!-- Ingresar -->
         <button type="submit" name="Ingresar" id="idIngresar" >Ingresar</button>
         <!-- Crear Usuario -->
-        <button type="submit" name="Crear_Usuario" id="idCrear_Usuario" >Crear Usuario</button>
+        <button onclick="location.href='/choqmol/crearCliente.php'"type="submit" name="Crear_Usuario" id="idCrear_Usuario" >Crear Usuario</button>
       </div>
     </form>
   </div>
