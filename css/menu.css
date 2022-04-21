@@ -1,8 +1,9 @@
+/* Retirar margenes de la página */
 *{
   padding: 0px;
   margin: 0px;
 }
-
+/* Formato barrra de menú */
 header{
     width: 100%;
     height: 50px;

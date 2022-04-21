@@ -108,7 +108,7 @@
                 </div>
                 <br>
                 <div>
-                    <button type="submit" id="Cancelar" class="btn btn-primary">Cancelar</button>
+                    <button type="submit" id="Cancelar" class="btn btn-primary"> <a href="menu.php">Atras</button>
                     <button type="submit" id="Modificar_Usuario" class="btn btn-primary">Guardar Cambios</button>
                 </div>
         </form>

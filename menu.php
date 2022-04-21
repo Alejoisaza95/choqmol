@@ -16,34 +16,40 @@
 <body>
   <header>
     <div class="contenedor">
+      <!-- Titulo -->
       <h1 class="fa fa-car">CRM CHOQUETMOL</h1>
       <!-- <input type="checkbox" id="menu_bar"> -->
       <!-- <label class="fa fa-bars" for="menu_bar"></label> -->
-      <nav class="menu">
+
+      <!-- Barra de nabegación -->
+      }<nav class="menu">
         <ul class="nav">
           <li><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
           <li><a class="nav-link" href="#">Clientes</a>
+            <!-- Sublista de menú -->
             <ul>
               <li><a class="nav-link" href="/choqmol/crearCliente.php">Crear Cliente</a></li>
-              <li><a class="nav-link" href="/choqmol/listadoClientes.php">Modificar Clientes</a></li>
+              <li><a class="nav-link" href="/choqmol/listadoClientes.php">Listado de Clientes</a></li>
               <li><a class="nav-link" href="/choqmol/gestionarCliente.php">Gestión de clientes</a></li>
             </ul>
           </li>
-          <li><a class="nav-link" href="#">Usuario</a>
+          <li><a class="nav-link" href="#">Usuarios</a>
+            <!-- Sublista de menú -->
             <ul>
               <li><a class="nav-link" href="/choqmol/crearUsuario.php">Crear Usuarios</a></li>
-              <li><a class="nav-link" href="/choqmol/modUsuario.php">Modificar Usuarios</a></li>
+              <li><a class="nav-link" href="/choqmol/modUsuario.php">Listado de Usuarios</a></li>
             </ul>
           </li>
         </ul>
+        <!-- Botón de cerrar sesión -->
         <div class="Salir">
-          <button onclick="location.href='/choqmol/index.php'" type="submit" name="Cerrar_Sesion"  id="Salir_Sistema" class="btn btn-primary">Cerrar Sesión</button <?php include 'Cierre.php' ?> >
+          <button onclick="location.href='/choqmol/index.php'" type="submit" name="Cerrar_Sesion" id="Salir_Sistema" class="btn btn-primary">Cerrar Sesión</button <?php include 'Cierre.php' ?>>
         </div>
       </nav>
     </div>
   </header>
 
-
+      <!-- Imagen página de inicio -->
   <div class="img">
     <img src="img/logo.jpg" alt="" height="500px" width="600px">
   </div>

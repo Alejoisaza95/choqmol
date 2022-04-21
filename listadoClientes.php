@@ -26,7 +26,7 @@ include "Conexion_BD.php"
                     <button type="submit" id="Buscar" class="btn btn-primary">Buscar</button>
                     <button type="submit" id="Modificar_Cliente" class="btn btn-primary"><a href="actualizarCliente.php">Modificar</a></button>
                     <button type="submit" id="EliminarCliente" class="btn btn-primary">Eliminar Cliente</button>
-                    <button type="submit" id="Atras" class="btn btn-primary">Atrás</button>
+                    <button type="submit" id="Atras" class="btn btn-primary"><a href="menu.php">Atrás</button>
                 </div>
                 <div id="tabla">
                     <table class="table">
