@@ -1,6 +1,4 @@
-<?php
-include "Conexion_BD.php"
-?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -24,7 +22,7 @@ include "Conexion_BD.php"
                     <label class="visually-hidden" for="autoSizingSelect">Buscar</label>
                     <input type="text" id="txtBuscar" name="Buscar" class="form-control" placeholder="Buscar Cliente">
                     <button type="submit" id="Buscar" class="btn btn-primary">Buscar</button>
-                    <button type="submit" id="Modificar_Cliente" class="btn btn-primary"><a href="actualizarCliente.php">Modificar</a></button>
+                    <button type="submit" id="Modificar_Cliente" name="Modificar_Cliente" class="btn btn-primary"><a href="actualizarCliente.php">Modificar</a></button>
                     <button type="submit" id="EliminarCliente" class="btn btn-primary">Eliminar Cliente</button>
                     <button type="submit" id="Atras" class="btn btn-primary"><a href="menu.php">Atrás</button>
                 </div>

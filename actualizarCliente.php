@@ -1,3 +1,7 @@
+<?php
+include "Conexion_BD.php";
+include "Modificar.php";
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -15,24 +19,24 @@
 <body>
     <div id="modCliente" class="contenedor">
         <h1>Modificar Cliente</h1>
-        <form id="formulario_modCliente" class="form" action="index.html" method="post">
+        <form id="formulario_modCliente" class="form" action="Modificar.php" method="get">
             <div class="row">
 
                 <div class="col-md-6">
                     <label class="visually-hidden" for="autoSizingSelect">Nombre</label>
-                    <input type="text" id="Nombre" class="form-control" placeholder="Nombre">
+                    <input type="text" name="Nombre" value="<?php echo $_REQUEST['Nombre'];?>" class="form-control" placeholder="Nombre" pattern="[a-zA-Z]+ && [' ']+]" required>
                 </div>
                 <div class="col-md-6">
                     <label class="visually-hidden" for="autoSizingSelect">Apellido</label>
-                    <input type="text" id="Apellido" class="form-control" placeholder="Apellido">
+                    <input type="text" name="Apellido" class="form-control" placeholder="Apellido" pattern="[a-zA-Z]+ && [' ']+]" required>
                 </div>
                 <div class="col-md-6">
                     <label class="visually-hidden" for="autoSizingSelect">Número de documento</label>
-                    <input type="text" id="Documento" class="form-control" placeholder="Número de documento">
+                    <input type="text" name="Documento" class="form-control" placeholder="Número de documento" required>
                 </div>
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Correo</label>
-                    <input type="email" class="form-control" id="Correo" placeholder="Correo">
+                    <input type="email" class="form-control" name="Correo" placeholder="Correo" required>
                 </div>
                 <div class="col-md-6">
                     <label for="inputAddress" class="form-label">Dirección</label>
