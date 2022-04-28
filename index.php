@@ -37,7 +37,7 @@
         <!-- Ingresar -->
         <button type="submit" name="Ingresar" id="idIngresar" >Ingresar</button>
         <!-- Crear Usuario -->
-        <button onclick="location.href='/choqmol/crearCliente.php'"type="submit" name="Crear_Usuario" id="idCrear_Usuario" >Crear Usuario</button>
+        <button onclick="location.href='/choqmol/crearUsuario.php'"type="submit" name="Crear_Usuario" id="idCrear_Usuario" >Crear Usuario</button>
       </div>
     </form>
   </div>
