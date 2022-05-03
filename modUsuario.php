@@ -17,53 +17,6 @@
         <h1>Modificar Usuario</h1>
         <form id="formulario_modUsuario" class="form" action="index.html" method="post">
             <div class="row">
-                <div class="col-md-8">
-                    <label class="visually-hidden" for="autoSizingSelect">Buscar</label>
-                    <input type="text" id="txtBuscar" class="form-control" placeholder="Buscar Usuario">
-                    <button type="submit" id="btnBuscar" class="btn btn-primary">Buscar</button>
-                </div>
-                <div id="tabla">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Id</th>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Apellido</th>
-                                <th scope="col">Documento</th>
-                                <th scope="col">Corre</th>
-                                <th scope="col">Dirección</th>
-                                <th scope="col">Teléfono</th>
-                                <th scope="col">Rol</th>
-                                <th scope="col">Estado</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Nataly</td>
-                                <td>Martínez</td>
-                                <td>7777777</td>
-                                <td>nataly.97.11.m@gmail.com</td>
-                                <td>Clle 72</td>
-                                <td>3502181420</td>
-                                <td>Admin</td>
-                                <td>Activo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Alejandro</td>
-                                <td>Isaza</td>
-                                <td>888888</td>
-                                <td>alejandro@gmail.com</td>
-                                <td>Clle 50</td>
-                                <td>123456789</td>
-                                <td>Admin</td>
-                                <td>Activo</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
                 <div class="row">
                     <div class="col-md-6">
                         <label class="visually-hidden" for="autoSizingSelect">Nombre</label>
@@ -107,9 +60,12 @@
                     </div>
                 </div>
                 <br>
+                <!-- Botones -->
                 <div>
-                    <button type="submit" id="Cancelar" class="btn btn-primary"> <a href="menu.php">Atras</button>
-                    <button type="submit" id="Modificar_Usuario" class="btn btn-primary">Guardar Cambios</button>
+                    <!-- Modificar Usuario -->
+                    <button type="submit" name="Modificar_Usuario" class="btnModUsuario">Guardar Cambios</button>
+                    <!-- Regresar al menú -->
+                    <button onclick="location.href='/choqmol/menu.php'" type="submit" name="Regresar" class="btn_RegresarUsuario">Regresar</button>
                 </div>
         </form>
     </div>

@@ -1,14 +1,7 @@
-/* Color de ventana Usuario */
+/* Color de la pagína */
 body {
-  background: linear-gradient(to bottom, rgb(193, 243, 191), white);
-  background: linear-gradient(to left, rgb(70, 116, 68), rgb(161, 212, 119));
-}
-
-/* Formato de título de la ventana Crear Usuario */
-#tituloCrear {
-  text-align: center;
-  font-size: 120px;
-  color: aliceblue;
+  background: linear-gradient(to bottom, rgb(90, 230, 85), rgb(255, 255, 255));
+  background: linear-gradient(to left, rgb(209, 240, 209), rgb(191, 221, 166));
 }
 /* Títulos */
 h1 {
@@ -17,12 +10,16 @@ h1 {
   color: rgb(24, 63, 37);
 }
 
-/* Formato del formulario Crear Usuario */
+/* Formato del formulario*/
 .form {
   float: right;
+  margin-left: 100px;
+  margin-right: 50px;
+  font-size: 30px;
+  color: rgb(22, 70, 40);
   padding: 5px;
-  margin: 5px;
 }
+/* Formulario de la ventana crearUsuario.php */
 #formulario_crearUsuario {
   text-align: left;
   font-size: 25px;
@@ -31,7 +28,8 @@ h1 {
   margin-top: -400px;
   color: rgb(35, 66, 47);
 }
-/* Imagen de la ventana Crear Usuario */
+
+/* Imagen de la ventana crearUsuario.php */
 img {
   margin-left: 130px;
   margin-top: 20px;
@@ -42,12 +40,12 @@ img {
   border-style: outset;
   border-color: rgb(159, 255, 188);
 }
-/* Subtitulos (Label) del formulario Crear Usuario */
+/* Subtitulos (Label) del formulario crearUsuario.php */
 label {
   margin-top: 10px;
   margin-bottom: 5px;
 }
-/* Botones de la ventana Crear Usuario */
+/* Botones */
 button {
   background-color: #4caf50;
   color: white;
@@ -56,18 +54,37 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-left: 15px;
-  margin-top: 50px;
   border-style: groove;
   border-color: rgb(182, 247, 202);
 }
-
-/* Color de ventana Modificar Usuario */
-#bodymodUsuario {
-  background: linear-gradient(to bottom, rgb(90, 230, 85), rgb(255, 255, 255));
-  background: linear-gradient(to left, rgb(209, 240, 209), rgb(191, 221, 166));
+/* Quitar subrayado y formato de etiqueta a en la ventana listadoUsuarios.php (De botones Modifcar, Crear Cliente y Atrás */
+a{ 
+  outline: none;
+  text-decoration: none;
+  color: white;
 }
-/* Formato del formulario Modificar Usuario */
+/* Formato de listado de clientes de la ventana listadoUsuarios.php */
+#tabla {
+  background-color: aliceblue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: medium;
+}
+/* Botón Buscar de la ventana listadoUsuarios.php */
+.btn_Buscar{
+  margin-top: -105px;
+  float: right;
+  margin-right: 300px;
+}
+/* Botón Crear cliente de la ventana listadoClientes.php */
+.btn_CrearUsuario {
+  margin-top: 15px;
+} 
+/* Botón Eliminar Cliente de la ventana listadoClientes.php */
+.btn_EliminarUsuario {
+  background-color: rgb(223, 70, 70);
+}
+ /* Formato del formulario Modificar Usuario */
 #formulario_modUsuario {
   text-align: left;
   font-size: 20px;
@@ -75,27 +92,24 @@ button {
   margin-right: 50px;
   color: rgb(35, 66, 47);
 }
-#tabla {
-  background-color: aliceblue;
+/* Botón atrás de la ventana modUsuario.php */
+.btnModUsuario {
+  margin-left: 280px;
+  margin-top: 35px;
+  margin-right: 250px;
 }
-#Cancelar {
-  font-size: 90%;
-  background-color: rgb(8, 117, 54);
-  margin-left: 480px;
-  margin-top: 15px;
+/* Botón Guardar Cambios de la ventana modUsuario.php */
+.btn_RegresarUsuario {
+  margin-top: 35px;
 }
-#Modificar_Usuario {
-  font-size: 90%;
-  background-color: rgb(8, 117, 54);
-  margin-top: 15px;
+/* Botón Crear Usaurio de la ventan crearUsuario.php */
+.btnCrearUsuario{
+  float: right;
+  margin-right: 200px;
+  margin-top: -50px;
 }
-#btnBuscar {
-  font-size: 30px;
-  background-color: rgb(8, 117, 54);
-  margin-left: 0px;
+/* Botón Regresar de la ventan crearUsuario.php */
+.btnRegresarUsuario{
   float: right;
   margin-top: -50px;
-  margin-right: -150px;
-  margin-bottom: 15px;
 }
-

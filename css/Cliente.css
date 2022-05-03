@@ -92,26 +92,8 @@ a{
 }
 /* Botón Guardar Comentario de la ventana gestionarCliente */
 .btn_GuardarComentario, #btnGuardarComentario{
-  margin-left: 450px;
+  margin-left: 350px;
   margin-bottom: 0px;
   margin-top: 15px;
-  margin-right: 35px;
+  margin-right: 215px;
 }
-/* #Cancelar {
-  font-size: 25px;
-  background-color: rgb(8, 117, 54);
-  margin-left: 480px;
-  margin-top: 15px;
-  margin-right: 20px;
-} */
-
-
-/* #Atras {
-  background-color: rgb(8, 117, 54);
-  font-size: large;
-  float: right;
-  margin-top: -40px;
-  margin-right: -180px;
-  margin-left: 0px;
-} */
-

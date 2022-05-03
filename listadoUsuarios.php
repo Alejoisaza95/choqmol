@@ -9,36 +9,36 @@ include 'BorrarCliente.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Cliente</title>
+    <title>Lista de Usuarios</title>
     <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="css/Cliente.css">
+    <link rel="stylesheet" href="css/Usuario.css">
 </head>
 
 <body>
-    <div id="modCliente" class="contenedor">
-        <h1>Listado de Clientes</h1>
-        <form id="formulario_modCliente" class="form" action="listadoClientes.php" method="post">
+    <div id="" class="contenedor">
+        <h1>Listado de Usuarios</h1>
+        <form id="formulario_listadoUsuarios" class="form" action="" method="post">
             <div class="row">
                 <div class="col-md-8">
-                    <!-- Campo buscar o filtrar cliente -->
+                    <!-- Campo buscar o filtrar Usuario -->
                     <label class="visually-hidden" for="autoSizingSelect">Buscar</label>
-                    <input type="text" id="txtBuscar" name="Buscar" class="form-control" placeholder="Buscar Cliente">
-                    <!-- Botón Crear Cliente -->
-                    <button type="submit" name="btnCrearCliente" class="btn_CrearCliente"><a href="crearCliente.php">Crear Cliente</a></button>
-                    <!-- Botón Modificar o actualizar Cliente -->
-                    <button type="submit" name="btnModificarCliente"><a href="actualizarCliente.php">Modificar</a></button>
-                    <!-- Botón Eliminar Cliente -->
-                    <button type="submit" name="btnEliminarCliente" class="btn_EliminarCliente">Eliminar Cliente</button>
+                    <input type="text" id="txtBuscar" name="Buscar" class="form-control" placeholder="Buscar Usuario">
+                    <!-- Botón Crear Usuario -->
+                    <button type="submit" name="btnCrearUsuario" class="btn_CrearUsuario"><a href="crearUsuario.php">Crear Usuario</a></button>
+                    <!-- Botón Modificar o actualizar Usuario -->
+                    <button type="submit" name="btnModificarUsuario"><a href="modUsuario.php">Modificar</a></button>
+                    <!-- Botón Eliminar Usuario -->
+                    <button type="submit" name="btnEliminarUsuario" class="btn_EliminarUsuario">Eliminar Usuario</button>
                     <!-- Botón atrás -->
                     <button type="submit" name="btnAtras"><a href="menu.php">Atrás</button>
                 </div>
                 <div>
-                    <!-- Botón Buscar o filtrar Cliente -->
+                    <!-- Botón Buscar o filtrar Usuario -->
                     <button type="submit" name="btnBuscar" class="btn_Buscar">Buscar</button>
                 </div>
-                <!-- Tabla de listado de clientes -->
+                <!-- Tabla de listado de Usuarios -->
                 <div id="tabla">
                     <table class="table">
                         <thead>
@@ -50,11 +50,13 @@ include 'BorrarCliente.php';
                                 <th scope="col">Correo</th>
                                 <th scope="col">Direccion</th>
                                 <th scope="col">Telefono</th>
-                                <th scope="col">Tipo Cliente</th>
+                                <th scope="col">Usuario</th>
+                                <th scope="col">Clave</th>
+                                <th scope="col">Rol</th>
                                 <th scope="col">Estado Cliente</th>
                             </tr>
                         </thead>
-                        <!-- Código php para invocar la consulta realizada a la base de datos de la tabla de clientes-->
+                        <!-- Código php para invocar la consulta realizada a la base de datos de la tabla de usuarios-->
                         <tbody>
                             <?php
                             include "Leer.php";

@@ -70,7 +70,7 @@
                         <textarea class="form-control" id="Comentario" rows="3"></textarea>
                     </div>
                     <div>
-                        <button type="submit" name="btnGuardarComentario" class="btn_GuardarComentario">Guardar Cliente</button>
+                        <button type="submit" name="btnGuardarComentario" class="btn_GuardarComentario">Guardar Comentario</button>
                         <button onclick="location.href='/choqmol/menu.php'" type="submit" name="Regresar_Comentarios" class="btn_RegresarComentarios">Regresar</button>
                     </div>
                 </div>

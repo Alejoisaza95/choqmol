@@ -24,7 +24,10 @@ header{
   #menu_bar{
     display: none;
   }
-  
+  /* tútulo de la ventana menu.php */
+  .tutuloMenu{
+    margin-left: 50px;
+  }
   header label{
     float: right;
     font-size: 28px;
@@ -114,4 +117,3 @@ header{
     margin-right: 5px;
     border: none;
   }
-  

@@ -77,13 +77,11 @@ include("registrar_Usuario.php");
                     </select>
                 </div>
                 <!-- Botones -->
-                <div class="col-md-3">
+                <div class="botones_Usuario">
                     <!-- Crear Usuario -->
-                    <button type="submit" name="Crear_Usuario">Crear Usuario</button>
-                </div>
-                <div class="col-md-3">
+                    <button type="submit" name="Crear_Usuario" class="btnCrearUsuario">Crear Usuario</button>
                     <!-- Regresar a Login -->
-                    <button onclick="location.href='/choqmol/index.php'" type="submit" name="Regresar">Regresar</button>
+                    <button onclick="location.href='/choqmol/index.php'" type="submit" name="Regresar" class="btnRegresarUsuario">Regresar</button>
                 </div>
             </div>
         </form>

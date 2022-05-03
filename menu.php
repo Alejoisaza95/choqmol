@@ -17,12 +17,11 @@
   <header>
     <div class="contenedor">
       <!-- Titulo -->
-      <h1 class="fa fa-car">CRM CHOQUETMOL</h1>
+      <h1 class="tutuloMenu">CRM CHOQUETMOL</h1>
       <!-- <input type="checkbox" id="menu_bar"> -->
       <!-- <label class="fa fa-bars" for="menu_bar"></label> -->
-
       <!-- Barra de nabegación -->
-      }<nav class="menu">
+      <nav class="menu">
         <ul class="nav">
           <!-- <li><a class="nav-link active" aria-current="page" href="#">Inicio</a></li> -->
           <li><a class="nav-link" href="#">Clientes</a>
@@ -33,12 +32,7 @@
               <li><a class="nav-link" href="/choqmol/gestionarCliente.php">Historial de clientes</a></li>
             </ul>
           </li>
-          <li><a class="nav-link" href="#">Usuarios</a>
-            <!-- Sublista de menú -->
-            <ul>
-              <li><a class="nav-link" href="/choqmol/crearUsuario.php">Crear Usuarios</a></li>
-              <li><a class="nav-link" href="/choqmol/modUsuario.php">Listado de Usuarios</a></li>
-            </ul>
+          <li><a class="nav-link" href="/choqmol/listadoUsuarios.php">Usuarios</a>
           </li>
         </ul>
         <!-- Botón de cerrar sesión -->
