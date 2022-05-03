@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -19,13 +18,23 @@
         <form id="formulario_modCliente" class="form" action="listadoClientes.php" method="post">
             <div class="row">
                 <div class="col-md-8">
+                    <!-- Campo buscar o filtrar cliente -->
                     <label class="visually-hidden" for="autoSizingSelect">Buscar</label>
                     <input type="text" id="txtBuscar" name="Buscar" class="form-control" placeholder="Buscar Cliente">
-                    <button type="submit" id="Buscar" class="btn btn-primary">Buscar</button>
-                    <button type="submit" id="Modificar_Cliente" name="Modificar_Cliente" class="btn btn-primary"><a href="actualizarCliente.php">Modificar</a></button>
-                    <button type="submit" id="EliminarCliente" class="btn btn-primary">Eliminar Cliente</button>
-                    <button type="submit" id="Atras" class="btn btn-primary"><a href="menu.php">Atrás</button>
+                    <!-- Botón Crear Cliente -->
+                    <button type="submit" name="btnCrearCliente" class="btn_CrearCliente"><a href="crearCliente.php">Crear Cliente</a></button>
+                    <!-- Botón Modificar o actualizar Cliente -->
+                    <button type="submit" name="btnModificarCliente"><a href="actualizarCliente.php">Modificar</a></button>
+                    <!-- Botón Eliminar Cliente -->
+                    <button type="submit" name="btnElimarCliente" class="btn_EliminarCliente">Eliminar Cliente</button>
+                    <!-- Botón atrás -->
+                    <button type="submit" name="btnAtras"><a href="menu.php">Atrás</button>
                 </div>
+                <div>
+                    <!-- Botón Buscar o filtrar Cliente -->
+                    <button type="submit" name="btnBuscar" class="btn_Buscar">Buscar</button>
+                </div>
+                <!-- Tabla de listado de clientes -->
                 <div id="tabla">
                     <table class="table">
                         <thead>
@@ -39,15 +48,14 @@
                                 <th scope="col">Telefono</th>
                                 <th scope="col">Tipo_Cliente</th>
                                 <th scope="col">Estado_Cliente</th>
-                                <th scope="col">Acciones</th>
-
                             </tr>
                         </thead>
+                        <!-- Código php para invocar la consulta realizada a la base de datos de la tabla de clientes-->
                         <tbody>
                             <?php
                             include "Leer.php";
-                            
-                            while ($fila= mysqli_fetch_assoc($result)){
+
+                            while ($fila = mysqli_fetch_assoc($result)) {
                                 echo "
                                 <tr>
                                     <td>{$fila['Id_Cliente']}</td>
@@ -59,10 +67,8 @@
                                     <td>{$fila['Telefono']}</td>
                                     <td>{$fila['Tipo_Cliente']}</td>
                                     <td>{$fila['Estado_Cliente']}</td>
-                                    
-
                                 </tr>";
-                                    }
+                            }
                             ?>
                         </tbody>
                     </table>

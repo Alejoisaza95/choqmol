@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="css/gestionarCliente.css">
+    <link rel="stylesheet" href="css/Cliente.css">
 </head>
 
 <body>
@@ -20,7 +20,9 @@
                 <div class="col-md-8">
                     <label class="visually-hidden" for="autoSizingSelect">Buscar</label>
                     <input type="text" id="txtBuscar" class="form-control" placeholder="Buscar Cliente">
-                    <button type="submit" id="Buscar" class="btn btn-primary">Buscar</button>
+                </div>
+                <div>
+                    <button type="submit" name="btnBuscar" class="btn_BuscarComentario">Buscar</button>
                 </div>
                 <div id="tabla">
                     <table class="table">
@@ -62,16 +64,20 @@
                         </tbody>
                     </table>
                 </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <label for="" class="form-label">Comentario</label>
-                    <textarea class="form-control" id="Comentario" rows="3"></textarea>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="" class="form-label">Comentario</label>
+                        <textarea class="form-control" id="Comentario" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" name="btnGuardarComentario" class="btn_GuardarComentario">Guardar Cliente</button>
+                        <button onclick="location.href='/choqmol/menu.php'" type="submit" name="Regresar_Comentarios" class="btn_RegresarComentarios">Regresar</button>
                     </div>
                 </div>
-            </div>    
-            <br><div>
-            <button type="submit" id="Cancelar" class="btn btn-primary">Cancelar</button>
-            <button type="submit" id="Guardar_Comentario" class="btn btn-primary">Guardar Comentario</button>
+            </div>
+            <br>
+            <div>
+
             </div>
         </form>
     </div>

@@ -18,7 +18,7 @@ h1 {
   color: rgb(22, 70, 40);
   padding: 5px;
 }
-/* Formaro formulario */
+/* Formaro de formulario actualizarCliente.php */
 #formulario_modCliente {
   text-align: left;
   font-size: 20px;
@@ -43,60 +43,75 @@ button {
   border-style: groove;
   border-color: rgb(182, 247, 202); 
 }
-.btnCrear_Cliente, #Crear_Cliente{
-  float: left;
-  margin-bottom: 5px;
-  margin-top: 25px;
-  margin-left: 200px;
-}
-.btn_RegresarCliente, #Regresar{
-  float: right;
-  margin-bottom: 5px;
-  margin-top: 25px;
-  margin-right: 300px;
-}
-#Cancelar {
-  font-size: 25px;
-  background-color: rgb(8, 117, 54);
-  margin-left: 480px;
-  margin-top: 15px;
-  margin-right: 20px;
-}
-#Modificar_Cliente {
-  font-size: large;
-  background-color: rgb(8, 117, 54);
-  margin-top: 15px;
-  margin-right: 15px;
-}
-#Buscar {
-  font-size: large;
-  background-color: rgb(8, 117, 54);
-  margin-left: 0px;
-  float: right;
-  margin-top: -40px;
-  margin-right: -100px;
-}
+/* Formato de listado de clientes de la ventana listadoClientes.php */
 #tabla {
   background-color: aliceblue;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: medium;
 }
-#Atras {
+/* Botón de la ventana crearCliente.php */
+.btnCrear_Cliente, #Crear_Cliente{
+  float: left;
+  margin-bottom: 5px;
+  margin-top: 25px;
+  margin-left: 200px;
+}
+/* Botón de la ventana crearCliente.php */
+.btn_RegresarCliente, #Regresar{
+  float: right;
+  margin-bottom: 5px;
+  margin-top: 25px;
+  margin-right: 300px;
+}
+/* Quitar subrayado y formato de etiqueta a en la ventana listadoClientes.php (De botones Modifcar, Crear Cliente y Atrás */
+a{ 
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+/* Botón Buscar de la ventana listadoClientes.php */
+.btn_Buscar{
+  margin-top: -105px;
+  float: right;
+  margin-right: 300px;
+}
+/* Botón Crear cliente de la ventana listadoClientes.php */
+.btn_CrearCliente {
+  margin-top: 15px;
+} 
+/* Botón Eliminar Cliente de la ventana listadoClientes.php */
+.btn_EliminarCliente {
+  background-color: rgb(223, 70, 70);
+}
+/* Botón Buscar de la ventana gestionarCliente.php */
+.btn_BuscarComentario{
+  margin-top: -40px;
+  float: right;
+  margin-right: 300px;
+}
+/* Botón Guardar Comentario de la ventana gestionarCliente */
+.btn_GuardarComentario, #btnGuardarComentario{
+  margin-left: 450px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+  margin-right: 35px;
+}
+/* #Cancelar {
+  font-size: 25px;
+  background-color: rgb(8, 117, 54);
+  margin-left: 480px;
+  margin-top: 15px;
+  margin-right: 20px;
+} */
+
+
+/* #Atras {
   background-color: rgb(8, 117, 54);
   font-size: large;
   float: right;
   margin-top: -40px;
   margin-right: -180px;
   margin-left: 0px;
-}
-#EliminarCliente {
-  font-size: large;
-  background-color: rgb(236, 34, 34);
-  margin-top: 15px
-}
-a{
-  outline: none;
-  text-decoration: none;
-  color: white;
-}
+} */
+
