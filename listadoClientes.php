@@ -1,3 +1,7 @@
+<?php
+include 'BorrarCliente.php';
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -26,7 +30,7 @@
                     <!-- Botón Modificar o actualizar Cliente -->
                     <button type="submit" name="btnModificarCliente"><a href="actualizarCliente.php">Modificar</a></button>
                     <!-- Botón Eliminar Cliente -->
-                    <button type="submit" name="btnElimarCliente" class="btn_EliminarCliente">Eliminar Cliente</button>
+                    <button type="submit" name="btnEliminarCliente" class="btn_EliminarCliente">Eliminar Cliente</button>
                     <!-- Botón atrás -->
                     <button type="submit" name="btnAtras"><a href="menu.php">Atrás</button>
                 </div>
