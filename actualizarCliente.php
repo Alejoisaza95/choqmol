@@ -1,6 +1,7 @@
 <?php
 include "Conexion_BD.php";
 include "Modificar.php";
+$id=$_GET['id'];
 ?>
 <!DOCTYPE html>
 <html lang="es">

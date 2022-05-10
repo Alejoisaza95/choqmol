@@ -44,7 +44,7 @@ include 'BorrarCliente.php';
                         <thead>
                             <tr>
                                 <th scope="col">Id</th>
-                                <th scope="col">Num_Documento</th>
+                                <th scope="col">Numero Documento</th>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Apellido</th>
                                 <th scope="col">Correo</th>
@@ -71,6 +71,7 @@ include 'BorrarCliente.php';
                                     <td>{$fila['Telefono']}</td>
                                     <td>{$fila['Tipo_Cliente']}</td>
                                     <td>{$fila['Estado_Cliente']}</td>
+                                    <td><a href='actualizarCliente.php?id=".$fila['Nombre']."'><img src='./img/icons8-Edit-32.png' alt='Edit'></a></td>
                                 </tr>";
                             }
                             ?>

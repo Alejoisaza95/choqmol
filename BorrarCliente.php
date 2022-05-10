@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 // include "Conexion_BD.php";
 
@@ -9,13 +9,13 @@
 
 
 //     if($Resultado1){
-//         $v_eliminar= mysqli_fetch_row($Resultado1);
-//         echo $v_eliminar;
+//         $v_eliminar= $valor_buscado;
 //     } else {
 //         echo 'Malo';
 //     }
 // }
-// //$sql = "DELETE FROM clientes WHERE Id_Cliente=$valor_eliminar";
+//
+// $sql = "DELETE FROM clientes WHERE Id_Cliente=$valor_eliminar";
 //     $Resultado2 = mysqli_query($conexion,$sql); 
 //     if ($Resultado2){
 //         echo "<script>alert('Se ha eliminado el cliente exitosamente');
@@ -23,8 +23,5 @@
 //     } else {
 //         echo "<script>alert('No se pudo eliminar el registro');
 //              window.history.go(-1);</script>";
-
-
-// ?>
-
-
+//     }
+// ?> -->
