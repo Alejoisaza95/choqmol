@@ -27,10 +27,6 @@
                     <input type="text" id="txtBuscar" name="Buscar" class="form-control" placeholder="Buscar Cliente">
                     <!-- Botón Crear Cliente -->
                     <button type="submit" name="btnCrearCliente" class="btn_CrearCliente"><a href="crearCliente.php">Crear Cliente</a></button>
-                    <!-- Botón Modificar o actualizar Cliente -->
-                    <button type="submit" name="btnModificarCliente"><a href="actualizarCliente.php">Modificar</a></button>
-                    <!-- Botón Eliminar Cliente -->
-                    <button type="submit" name="btnEliminarCliente" class="btn_EliminarCliente">Eliminar Cliente</button>
                     <!-- Botón atrás -->
                     <button type="submit" name="btnAtras"><a href="menu.php">Atrás</button>
                 </div>
