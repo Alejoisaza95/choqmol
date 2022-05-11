@@ -26,7 +26,7 @@ include 'BorrarCliente.php';
                     <label class="visually-hidden" for="autoSizingSelect">Buscar</label>
                     <input type="text" id="txtBuscar" name="Buscar" class="form-control" placeholder="Buscar Usuario">
                     <!-- Botón Crear Usuario -->
-                    <button type="submit" name="btnCrearUsuario" class="btn_CrearUsuario"><a href="crearUsuario.php">Crear Usuario</a></button>
+                    <button type="submit" name="btnCrearUsuario" class="btn_CrearUsuario"><a href="crearUsuario_menu.php">Crear Usuario</a></button>
                     <!-- Botón Modificar o actualizar Usuario -->
                     <button type="submit" name="btnModificarUsuario"><a href="modUsuario.php">Modificar</a></button>
                     <!-- Botón Eliminar Usuario -->

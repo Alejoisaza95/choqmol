@@ -1,5 +1,5 @@
 <?php
-include 'BorrarCliente.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -71,7 +71,8 @@ include 'BorrarCliente.php';
                                     <td>{$fila['Telefono']}</td>
                                     <td>{$fila['Tipo_Cliente']}</td>
                                     <td>{$fila['Estado_Cliente']}</td>
-                                    <td><a href='actualizarCliente.php?id=".$fila['Nombre']."'><img src='./img/icons8-Edit-32.png' alt='Edit'></a></td>
+                                    <td><a href='actualizarCliente.php?id=".$fila['Id_Cliente']."'><img src='./img/icons8-Edit-32.png' alt='Edit'></a></td>
+                                    <td><a href='BorrarCliente.php?id=".$fila['Id_Cliente']."'><img src='./img/icons8-Trash-32.png' alt='Edit'></a></td>
                                 </tr>";
                             }
                             ?>

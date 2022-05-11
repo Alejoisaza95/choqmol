@@ -1,7 +1,8 @@
 <?php
 include "Conexion_BD.php";
-include "Modificar.php";
-$id=$_GET['id'];
+
+$id=$_GET["id"];
+$clientes="SELECT * FROM clientes WHERE Id_Cliente = '$id'";
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -20,54 +21,71 @@ $id=$_GET['id'];
 <body>
     <div id="modCliente" class="contenedor">
         <h1>Modificar Cliente</h1>
-        <form id="formulario_modCliente" class="form" action="Modificar.php" method="post">
+        <form id="formulario_modCliente" class="form" action="Procesar_Clientes.php" method="post">
             <div class="row">
+                <?php
+                $consulta=mysqli_query($conexion,$clientes);
+                while ($row = mysqli_fetch_assoc($consulta)) {
+                    echo"
 
-                <div class="col-md-6">
-                    <label class="visually-hidden" for="autoSizingSelect">Nombre</label>
-                    <input type="text" name="Nombre" value="<?php echo $formulario['Nombre'];?>" class="form-control" placeholder="Nombre" pattern="[a-zA-Z]+ && [' ']+]" required>
-                </div>
-                <div class="col-md-6">
-                    <label class="visually-hidden" for="autoSizingSelect">Apellido</label>
-                    <input type="text" name="Apellido" value="<?php echo $formulario['Apellido'];?>" class="form-control" placeholder="Apellido" pattern="[a-zA-Z]+ && [' ']+]" required>
-                </div>
-                <div class="col-md-6">
-                    <label class="visually-hidden" for="autoSizingSelect">Número de documento</label>
-                    <input type="text" name="Documento" value="<?php echo $formulario['Num_Documento'];?>" class="form-control" placeholder="Número de documento" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Correo</label>
-                    <input type="email" class="form-control" name="Correo" value="<?php echo $formulario['Correo'];?>" placeholder="Correo" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="inputAddress" class="form-label">Dirección</label>
-                    <input type="text" class="form-control" id="inputAddress" value="<?php echo $formulario['Direccion'];?>" placeholder="Dirección">
-                </div>
-                <div class="col-md-6">
-                    <label class="visually-hidden" for="autoSizingSelect">Teléfono</label>
-                    <input type="text" id="Telefono" value="<?php echo $formulario['Telefono'];?>" class="form-control" placeholder="Teléfono">
-                </div>
-                <div id="tipoCliente" value="<?php echo $formulario['Tipo_Cliente'];?>" class="col-md-6">
-                    <label class="visually-hidden" for="autoSizingSelect">Tipo de cliente</label>
-                    <select required class="form-select" name="TipoCliente" id="autoSizingSelect" required>
-                        <option disabled selected value="">Seleccione</option>
-                        <option value="Mayorista">Mayorista</option>
-                        <option value="De tal">De tal</option>
+                    
+                    <input type='hidden' name='Id_Cliente' value='$row[Id_Cliente]'>
+                    
+
+                    <div class='col-md-6'>
+                    <label class='visually-hidden' for='autoSizingSelect'>Nombre</label>
+                    <input type='text'name='Nombre' value='$row[Nombre]' class='form-control' placeholder='Nombre' pattern='[a-zA-Z]+ && [' ']+]' required>
+                    </div>
+                    
+                    <div class='col-md-6'>
+                    <label class='visually-hidden' for='autoSizingSelect'>Apellido</label>
+                    <input type='text' name='Apellido' value='$row[Apellido]' class='form-control' placeholder='Apellido' pattern='[a-zA-Z]+ && [' ']+]' required>
+                    </div>
+
+                    <div class='col-md-6'>
+                    <label class='visually-hidden' for='autoSizingSelect'>Número de documento</label>
+                    <input type='text' name='Documento' value='$row[Num_Documento]' class='form-control' placeholder='Número de documento' required>
+
+                    </div>
+                    <div class='col-md-6'>
+                    <label for='inputEmail4' class='form-label'>Correo</label>
+                    <input type='email' class='form-control' name='Correo' value='$row[Correo]' placeholder='Correo' required>
+                    </div>
+
+                    <div class='col-md-6'>
+                    <label for='inputAddress' class='form-label'>Dirección</label>
+                    <input type='text' class='form-control' name='Direccion' value='$row[Direccion]' placeholder='Dirección' required>
+                    </div>
+
+                    <div class='col-md-6'>
+                    <label class='visually-hidden' for='autoSizingSelect'>Teléfono</label>
+                    <input type='text' name='Telefono' value='$row[Telefono]' class='form-control'placeholder='Ingresa celular o fijo' title='Es necesario ingresar 7 o 10 digitos' pattern='[0-9]{7,10}' required>
+                    </div>
+
+                    <div id='tipoCliente' class='col-md-6'>
+                    <label class='visually-hidden' for='autoSizingSelect'>Tipo de cliente</label>
+                    <select required class='form-select' name='TipoCliente' value='$row[Tipo_Cliente]' id='autoSizingSelect' required>
+                        <option value='Mayorista'>Mayorista</option>
+                        <option value='De tal'>De tal</option>
                     </select>
-                </div>
-                <div id="estadoCliente" value="<?php echo $formulario['Estado_Cliente'];?>" class="col-md-6">
-                    <label class="visually-hidden" for="autoSizingSelect">Estado</label>
-                    <select required class="form-select" name="EstadoCliente" id="autoSizingSelect">>
-                        <option disabled selected value="">Seleccione</option>
-                        <option value="Activo">Activo</option>
-                        <option value="Inactivo">Inactivo</option>
+                    </div>
+
+                    <div id='estadoCliente' class='col-md-6'>
+                    <label class='visually-hidden' for='autoSizingSelect'>Estado</label>
+                    <select required class='form-select' name='EstadoCliente' value='$row[Estado_Cliente]' id='autoSizingSelect'required>
+                        <option value='Activo'>Activo</option>
+                        <option value='Inactivo'>Inactivo</option>
                     </select>
-                </div>
+                    </div>
+                "
+                ;
+                }
+                ?>
             </div>
             <br>
             <div>
-                <button type="submit" id="Cancelar" class="btn btn-primary">Cancelar</button>
-                <button type="submit" id="Modificar_Cliente" class="btn btn-primary">Guardar</button>
+                <button type="submit" name="Cancelar" class="btn btn-primary">Cancelar</button>
+                <button type="submit" name="Modificar_Cliente" class="btn btn-primary">Guardar</button>
             </div>
         </form>
     </div>
