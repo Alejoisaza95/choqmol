@@ -26,4 +26,8 @@ if ($resultado){
     window.history.go(-1);</script>";
     }
 
+if (isset($_POST["Cancelar"])){
+   header ("Location: listadoClientes.php");
+}
+
 ?>
