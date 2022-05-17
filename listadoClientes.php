@@ -24,7 +24,7 @@
                     <!-- Botón Crear Cliente -->
                     <button type="submit" name="btnCrearCliente" class="btn_CrearCliente"><a href="crearCliente.php">Crear Cliente</a></button>
                     <!-- Botón atrás -->
-                    <button type="submit" name="btnAtras"><a href="menu.php">Atrás</button>
+                    <button type="submit" name="btnAtras" class="btnAtras_Listado"><a href="menu.php">Atrás</button>
                 </div>
                 <div>
                     <!-- Botón Buscar o filtrar Cliente -->
@@ -36,14 +36,18 @@
                         <thead>
                             <tr>
                                 <th scope="col">Id</th>
-                                <th scope="col">Numero Documento</th>
+                                <th scope="col">N. Documento</th>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Apellido</th>
                                 <th scope="col">Correo</th>
                                 <th scope="col">Direccion</th>
                                 <th scope="col">Telefono</th>
                                 <th scope="col">Tipo Cliente</th>
-                                <th scope="col">Estado Cliente</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Editar</th>
+                                <th scope="col">Eliminar</th>
+                                <th scope="col">Nota</th>
+
                             </tr>
                         </thead>
                         <!-- Código php para invocar la consulta realizada a la base de datos de la tabla de clientes-->
@@ -65,6 +69,7 @@
                                     <td>{$fila['Estado_Cliente']}</td>
                                     <td><a href='actualizarCliente.php?id=".$fila['Id_Cliente']."'><img src='./img/icons8-Edit-32.png' alt='Edit'></a></td>
                                     <td><a href='BorrarCliente.php?id=".$fila['Id_Cliente']."'><img src='./img/icons8-Trash-32.png' alt='Edit'></a></td>
+                                    <td><a href='crearComentario.php?id=".$fila['Id_Cliente']."'><img src='./img/icons8-nota-48.png' alt='Edit'></a></td>
                                 </tr>";
                             }
                             ?>

@@ -49,4 +49,7 @@ button {
   border-style: groove;
   border-color: rgb(182, 247, 202);
 }
-
+.btnIngresar {
+  margin-left: 150px;
+  margin-top: 15px;
+}

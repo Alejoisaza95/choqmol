@@ -77,7 +77,7 @@ include("registrar_Cliente.php");
                 <button type="submit" name="Crear_Cliente" class="btnCrear_Cliente">Guardar Cliente</button>
             </div>
             <!-- Regresar a Menu -->
-            <button onclick="location.href='/choqmol/menu.php'" type="submit" name="Regresar" class="btn_RegresarCliente">Regresar</button>
+            <button onclick="location.href='/choqmol/listadoClientes.php'" type="submit" name="Regresar" class="btn_RegresarCliente">Regresar</button>
     </div>
     </form>
     </div>

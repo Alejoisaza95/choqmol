@@ -1,8 +1,8 @@
 <?php
 include "Conexion_BD.php";
 
-$id=$_GET["id"];
-$clientes="SELECT * FROM clientes WHERE Id_Cliente = '$id'";
+$id = $_GET["id"];
+$clientes = "SELECT * FROM clientes WHERE Id_Cliente = '$id'";
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -24,9 +24,9 @@ $clientes="SELECT * FROM clientes WHERE Id_Cliente = '$id'";
         <form id="formulario_modCliente" class="form" action="Procesar_Clientes.php" method="post">
             <div class="row">
                 <?php
-                $consulta=mysqli_query($conexion,$clientes);
+                $consulta = mysqli_query($conexion, $clientes);
                 while ($row = mysqli_fetch_assoc($consulta)) {
-                    echo"
+                    echo "
 
                     
                     <input type='hidden' name='Id_Cliente' value='$row[Id_Cliente]'>
@@ -77,15 +77,14 @@ $clientes="SELECT * FROM clientes WHERE Id_Cliente = '$id'";
                         <option value='Inactivo'>Inactivo</option>
                     </select>
                     </div>
-                "
-                ;
+                ";
                 }
                 ?>
             </div>
             <br>
             <div>
-                <button type="submit" name="Cancelar" class="btn btn-primary">Cancelar</button>
-                <button type="submit" name="Modificar_Cliente" class="btn btn-primary">Guardar</button>
+                <button type="submit" name="Modificar_Cliente"  class="btnModificar_Cliente">Guardar</button>
+                <button type="submit" name="Cancelar" class="btn_RegresarCliente">Cancelar</button>
             </div>
         </form>
     </div>

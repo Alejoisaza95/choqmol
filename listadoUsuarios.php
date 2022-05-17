@@ -1,5 +1,5 @@
 <?php
-include 'BorrarCliente.php';
+// include 'BorrarCliente.php';
 ?>
 
 <!DOCTYPE html>
@@ -27,12 +27,8 @@ include 'BorrarCliente.php';
                     <input type="text" id="txtBuscar" name="Buscar" class="form-control" placeholder="Buscar Usuario">
                     <!-- Botón Crear Usuario -->
                     <button type="submit" name="btnCrearUsuario" class="btn_CrearUsuario"><a href="crearUsuario_menu.php">Crear Usuario</a></button>
-                    <!-- Botón Modificar o actualizar Usuario -->
-                    <button type="submit" name="btnModificarUsuario"><a href="modUsuario.php">Modificar</a></button>
-                    <!-- Botón Eliminar Usuario -->
-                    <button type="submit" name="btnEliminarUsuario" class="btn_EliminarUsuario">Eliminar Usuario</button>
                     <!-- Botón atrás -->
-                    <button type="submit" name="btnAtras"><a href="menu.php">Atrás</button>
+                    <button type="submit" name="btnAtras" class="btnAtras_Listado"><a href="menu.php">Atrás</button>
                 </div>
                 <div>
                     <!-- Botón Buscar o filtrar Usuario -->
@@ -53,7 +49,10 @@ include 'BorrarCliente.php';
                                 <th scope="col">Usuario</th>
                                 <th scope="col">Clave</th>
                                 <th scope="col">Rol</th>
-                                <th scope="col">Estado Cliente</th>
+                                <th scope="col">Estado </th>
+                                <th scope="col">Editar</th>
+                                <th scope="col">Eliminar</th>
+
                             </tr>
                         </thead>
                         <!-- Código php para invocar la consulta realizada a la base de datos de la tabla de usuarios-->

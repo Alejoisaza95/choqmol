@@ -50,40 +50,47 @@ button {
   margin-bottom: 20px;
   font-size: medium;
 }
-/* Botón de la ventana crearCliente.php */
+/* Botón crear cliente de la ventana crearCliente.php */
 .btnCrear_Cliente, #Crear_Cliente{
   float: left;
   margin-bottom: 5px;
   margin-top: 25px;
-  margin-left: 200px;
+  margin-left: 350px;
 }
-/* Botón de la ventana crearCliente.php */
+/* Botón atrás de la ventana crearCliente.php y actualizarCliente.php */
 .btn_RegresarCliente, #Regresar{
   float: right;
   margin-bottom: 5px;
   margin-top: 25px;
-  margin-right: 300px;
+  margin-right: 380px;
 }
-/* Quitar subrayado y formato de etiqueta a en la ventana listadoClientes.php (De botones Modifcar, Crear Cliente y Atrás */
+/* Quitar subrayado y formato de etiqueta a en la ventana listadoClientes.php (De botones Crear Cliente y Atrás */
 a{ 
   outline: none;
   text-decoration: none;
   color: white;
 }
+/* Botón Atrás de la ventana listadoClientes.php */
+.btnAtras_Listado {
+  /* float: left;
+  margin-top: -170px; */
+  margin-top: -45px;
+  float: right;
+  margin-right: -355px;
+}
 /* Botón Buscar de la ventana listadoClientes.php */
 .btn_Buscar{
-  margin-top: -105px;
+  margin-top: -48px;
   float: right;
   margin-right: 300px;
 }
 /* Botón Crear cliente de la ventana listadoClientes.php */
 .btn_CrearCliente {
-  margin-top: 15px;
+  margin-top: -45px;
+  float: right;
+  margin-right: -260px;
 } 
-/* Botón Eliminar Cliente de la ventana listadoClientes.php */
-.btn_EliminarCliente {
-  background-color: rgb(223, 70, 70);
-}
+
 /* Botón Buscar de la ventana gestionarCliente.php */
 .btn_BuscarComentario{
   margin-top: -40px;
@@ -96,4 +103,17 @@ a{
   margin-bottom: 0px;
   margin-top: 15px;
   margin-right: 215px;
+}
+/* Titulo de la tabla listadoClientes.php */
+#tabla th{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(18, 65, 26);
+  font-size: 18px;
+}
+/* Botón Guardar Cambios de la ventana actualizarCliente.php */
+.btnModificar_Cliente, #Modificar_Cliente{
+  float: left;
+  margin-bottom: 5px;
+  margin-top: 25px;
+  margin-left: 380px;
 }

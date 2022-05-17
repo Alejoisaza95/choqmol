@@ -35,7 +35,10 @@
                                 <th scope="col">Corre</th>
                                 <th scope="col">Dirección</th>
                                 <th scope="col">Teléfono</th>
-                                <th scope="col">Estado</th>
+                                <th scope="col">Comentario</th>
+                                <th scope="col">Editar</th>
+                                <th scope="col">Eliminar</th>
+
                             </tr>
                         </thead>
                         <tbody>
@@ -48,7 +51,6 @@
                                 <td>Clle 72</td>
                                 <td>3502181420</td>
                                 <td>Hola mundo</td>
-                                <td>Activo</td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
@@ -59,21 +61,20 @@
                                 <td>Clle 50</td>
                                 <td>123456789</td>
                                 <td>Interesado</td>
-                                <td>Activo</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-md-12">
                         <label for="" class="form-label">Comentario</label>
                         <textarea class="form-control" id="Comentario" rows="3"></textarea>
-                    </div>
+                    </div>-->
                     <div>
-                        <button type="submit" name="btnGuardarComentario" class="btn_GuardarComentario">Guardar Comentario</button>
+                        <!-- <button type="submit" name="btnGuardarComentario" class="btn_GuardarComentario">Guardar Comentario</button> -->
                         <button onclick="location.href='/choqmol/menu.php'" type="submit" name="Regresar_Comentarios" class="btn_RegresarComentarios">Regresar</button>
                     </div>
-                </div>
+                </div> 
             </div>
             <br>
             <div>
