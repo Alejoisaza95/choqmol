@@ -15,14 +15,16 @@
 <body>
     <div id="gestionarCliente" class="contenedor">
         <h1>Gestionar Cliente</h1>
-        <form id="formulario_gestionarCliente" class="form" action="index.html" method="post">
+        <form id="formulario_gestionarCliente" class="form" action="gestionarCliente.php" method="post">
             <div class="row">
+
                 <div class="col-md-8">
                     <label class="visually-hidden" for="autoSizingSelect">Buscar</label>
-                    <input type="text" id="txtBuscar" class="form-control" placeholder="Buscar Cliente">
+                    <input type="text" name="txtBuscar" class="form-control" placeholder="Buscar Cliente">
                 </div>
+
                 <div>
-                    <button type="submit" name="btnBuscar" class="btn_BuscarComentario">Buscar</button>
+                    <button type="submit" name="btnBuscar_Comentario" class="btn_BuscarComentario">Buscar</button>
                 </div>
                 <div id="tabla">
                     <table class="table">
@@ -32,7 +34,7 @@
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Apellido</th>
                                 <th scope="col">Documento</th>
-                                <th scope="col">Corre</th>
+                                <th scope="col">Correo</th>
                                 <th scope="col">Dirección</th>
                                 <th scope="col">Teléfono</th>
                                 <th scope="col">Comentario</th>
@@ -42,26 +44,25 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Nataly</td>
-                                <td>Martínez</td>
-                                <td>7777777</td>
-                                <td>nataly.97.11.m@gmail.com</td>
-                                <td>Clle 72</td>
-                                <td>3502181420</td>
-                                <td>Hola mundo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Alejandro</td>
-                                <td>Isaza</td>
-                                <td>888888</td>
-                                <td>alejandro@gmail.com</td>
-                                <td>Clle 50</td>
-                                <td>123456789</td>
-                                <td>Interesado</td>
-                            </tr>
+                            <?php
+                            include "Leer_Comentario.php";
+
+                            while ($fila = mysqli_fetch_assoc($result)) {
+                                echo "
+                                <tr>
+                                    <td>{$fila['Id']}</td>
+                                    <td>{$fila['Nombre_Cliente']}</td>
+                                    <td>{$fila['Apellido_Cliente']}</td>
+                                    <td>{$fila['Documento_Cliente']}</td>
+                                    <td>{$fila['Correo_Cliente']}</td>
+                                    <td>{$fila['Direccion_Cliente']}</td>
+                                    <td>{$fila['Telefono_Cliente']}</td>
+                                    <td>{$fila['Comentario_Cliente']}</td>
+                                    <td><a href='actualizarCliente.php?id=".$fila['Id']."'><img src='./img/icons8-Edit-32.png' alt='Edit'></a></td>
+                                    <td><a href='BorrarCliente.php?id=".$fila['Id']."'><img src='./img/icons8-Trash-32.png' alt='Edit'></a></td>
+                                </tr>";
+                            }
+                            ?>
                         </tbody>
                     </table>
                 </div>
