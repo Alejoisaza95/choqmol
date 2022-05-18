@@ -70,6 +70,14 @@ a{
   text-decoration: none;
   color: white;
 }
+/* label y texbox Buscar de la ventana listadoClientes.php */
+#buscarClientes{
+  margin-left: 50px;
+}
+/* margin de los Botones de la ventana listadoClientes.php */
+#btnsClientes{
+  margin-left: 15px;
+}
 /* Botón Buscar de la ventana listadoClientes.php */
 .btn_Buscar{
   margin-top: 40px;
@@ -89,18 +97,30 @@ a{
   float: right;
   margin-right: 125px;
 }
-/* Botón Atrás de la ventana listadoClientes.php */
-.btnAtras_Listado {
+.btnAtras_Listado{
   margin-top: -48px;
   float: right;
-  margin-right: 25px;
+  margin-right: -290px;
+}
+#txtBuscarComentario{
+  margin-left: 150px;
+}
+
+/* Botones de la ventana gestionarCliente.php */
+#btnsListadoComentarios{
+  margin-top: 50px;
 }
 /* Botón Buscar de la ventana gestionarCliente.php */
 .btn_BuscarComentario{
-  margin-top: -40px;
-  float: right;
-  margin-right: 300px;
+ margin-right: 15px;
 }
+/* Botón Atrás de la ventana listadoClientes.php */
+.btn_RegresarCrearComentarios {
+  /* margin-top: -48px;
+  float: right;
+  margin-right: -280px; */
+}
+
 /* Botón Guardar Comentario de la ventana gestionarCliente */
 .btn_GuardarComentario, #btnGuardarComentario{
   margin-left: 350px;
@@ -121,9 +141,10 @@ a{
   margin-top: 25px;
   margin-left: 380px;
 }
-.btn_RegresarCrearComentarios, #Regresar_Comentarios{
+/* .btn_RegresarCrearComentarios, #Regresar_Comentarios{
   float: right;
   margin-top: -49px;
-  margin-right: 180px;
+  margin-right: 0px;
 
-}
+} */
+

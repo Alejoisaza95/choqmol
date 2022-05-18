@@ -16,13 +16,13 @@
     <div id="modCliente" class="contenedor">
         <h1>Listado de Clientes</h1>
         <form id="formulario_modCliente" class="form" action="listadoClientes.php" method="post">
-            <div class="row">
-                <div class="col-md-6">
+            <div  class="row">
+                <div id="buscarClientes" class="col-md-6">
                     <!-- Campo buscar o filtrar cliente -->
                     <label class="visually-hidden" for="autoSizingSelect">Buscar</label>
                     <input type="text" id="txtBuscar" name="Buscar" class="form-control" placeholder="Buscar Cliente">
                 </div>
-                <div class="col-md-6">
+                <div id="btnsClientes" class="col-md-5">
                     <!-- Botón Buscar o filtrar Cliente -->
                     <button type="submit" name="btnBuscar" class="btn_Buscar">Buscar</button>
                     <!-- Botón Crear Cliente -->

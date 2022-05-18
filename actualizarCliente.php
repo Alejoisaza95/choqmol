@@ -64,7 +64,8 @@ $clientes = "SELECT * FROM clientes WHERE Id_Cliente = '$id'";
 
                     <div id='tipoCliente' class='col-md-6'>
                     <label class='visually-hidden' for='autoSizingSelect'>Tipo de cliente</label>
-                    <select required class='form-select' name='TipoCliente' value='$row[Tipo_Cliente]' id='autoSizingSelect' required>
+                    <select class='form-select' name='TipoCliente' id='autoSizingSelect'>
+                        <option selected value='$row[Tipo_Cliente]'>$row[Tipo_Cliente]</option>
                         <option value='Mayorista'>Mayorista</option>
                         <option value='De tal'>De tal</option>
                     </select>
@@ -72,7 +73,8 @@ $clientes = "SELECT * FROM clientes WHERE Id_Cliente = '$id'";
 
                     <div id='estadoCliente' class='col-md-6'>
                     <label class='visually-hidden' for='autoSizingSelect'>Estado</label>
-                    <select required class='form-select' name='EstadoCliente' value='$row[Estado_Cliente]' id='autoSizingSelect'required>
+                    <select class='form-select' name='EstadoCliente' id='autoSizingSelect'>
+                        <option selected value='$row[Estado_Cliente]'>$row[Estado_Cliente]</option>
                         <option value='Activo'>Activo</option>
                         <option value='Inactivo'>Inactivo</option>
                     </select>

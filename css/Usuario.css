@@ -30,7 +30,7 @@ h1 {
 }
 
 /* Imagen de la ventana crearUsuario.php */
-img {
+.imagen {
   margin-left: 130px;
   margin-top: 20px;
   border-bottom-left-radius: 5%;
@@ -70,20 +70,24 @@ a{
   margin-bottom: 20px;
   font-size: medium;
 }
-/* Botón Buscar de la ventana listadoUsuarios.php */
+
+#txtBuscarUsuarios{
+  margin-left: 95px;
+ } 
+/* Botones de la ventana listadoUsuarios.php */
+#btnsListaUsuarios{
+  margin-top: 50px;
+  margin-left: 10px;
+}
+/* Botón Buscar Usuarios de la ventana listadoClientes.php */
 .btn_Buscar{
-  margin-top: -105px;
-  float: right;
-  margin-right: 300px;
+  margin-right: 15px;
 }
-/* Botón Crear cliente de la ventana listadoClientes.php */
+/* Botón Crear Usuario de la ventana listadoClientes.php */
 .btn_CrearUsuario {
-  margin-top: 15px;
-} 
-/* Botón Eliminar Cliente de la ventana listadoClientes.php */
-.btn_EliminarUsuario {
-  background-color: rgb(223, 70, 70);
+  margin-right: 15px;
 }
+
  /* Formato del formulario Modificar Usuario */
 #formulario_modUsuario {
   text-align: left;
@@ -92,15 +96,15 @@ a{
   margin-right: 50px;
   color: rgb(35, 66, 47);
 }
-/* Botón atrás de la ventana modUsuario.php */
-.btnModUsuario {
-  margin-left: 280px;
-  margin-top: 35px;
-  margin-right: 250px;
-}
 /* Botón Guardar Cambios de la ventana modUsuario.php */
-.btn_RegresarUsuario {
+.btnModUsuario {
   margin-top: 35px;
+  margin-left: 110px;
+  margin-right: 100px;
+}
+/* Botón atrás de la ventana modUsuario.php */
+.btn_RegresarUsuario {
+  /* margin-top: 35px; */
 }
 /* Botón Crear Usaurio de la ventan crearUsuario.php */
 .btnCrearUsuario{

@@ -22,7 +22,7 @@ include("registrar_Usuario.php");
         <h1 id="tituloCrear">Crear Usuario</h1>
         <!-- Imagen del formulario -->
         <div id="logo" class="">
-            <img src="img/logo.jpg" alt="">
+            <img class="imagen" src="img/logo.jpg" alt="">
         </div>
         <!-- Formulario para crear Usuarios -->
         <form id="formulario_crearUsuario" class="form" action="" method="post">
@@ -81,7 +81,7 @@ include("registrar_Usuario.php");
                     <!-- Crear Usuario -->
                     <button type="submit" name="Crear_Usuario" class="btnCrearUsuario">Crear Usuario</button>
                     <!-- Regresar a Login -->
-                    <button onclick="location.href='/choqmol/index.php'" type="submit" name="Regresar" class="btnRegresarUsuario">Regresar</button>
+                    <button onclick="location.href='/choqmol/listadoUsuarios.php'" type="submit" name="Regresar" class="btnRegresarUsuario">Regresar</button>
                 </div>
             </div>
         </form>

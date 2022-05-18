@@ -24,7 +24,7 @@ $sql = "SELECT * FROM usuarios WHERE Id_Usuario = '$id'";
         <h1>Modificar Usuario</h1>
         <form id="formulario_modUsuario" class="form" action="procesar_Usuario.php" method="post">
             <div class="row">
-            <?php
+                <?php
                 $consulta = mysqli_query($conexion, $sql);
                 while ($row = mysqli_fetch_assoc($consulta)) {
                     echo "
@@ -80,16 +80,16 @@ $sql = "SELECT * FROM usuarios WHERE Id_Usuario = '$id'";
                     </div>
                 ";
                 }
-                ?>    
-                </div>
-                <br>
+                ?>
                 <!-- Botones -->
-                <div>
+                <div class="col-md-6">
                     <!-- Modificar Usuario -->
                     <button type="submit" name="Modificar_Usuario" class="btnModUsuario">Guardar Cambios</button>
                     <!-- Regresar al menú -->
                     <button onclick="window.location.href='/listadoUsuarios.php'" type="submit" name="Regresar" class="btn_RegresarUsuario">Regresar</button>
                 </div>
+            </div>
+
         </form>
     </div>
 

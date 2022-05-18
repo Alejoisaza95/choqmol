@@ -18,7 +18,7 @@
     <h1>Bienvenido</h1>
     <!-- Imagen de la ventana Login -->
     <div id="logo" class="">
-      <img src="img/logo.jpg" alt="">
+      <img class="imagen" src="img/logo.jpg" alt="">
     </div>
     <!-- Formulario login -->
     <form id="formulario_login" class="form" action="login.php" method="post">

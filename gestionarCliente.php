@@ -17,15 +17,14 @@
         <h1>Historial de Clientes</h1>
         <form id="formulario_gestionarCliente" class="form" action="gestionarCliente.php" method="post">
             <div class="row">
-                <div class="col-md-8">
+                <div id="txtBuscarComentario" class="col-md-6">
                     <label class="visually-hidden" for="autoSizingSelect">Buscar</label>
                     <input type="text" name="txtBuscar" class="form-control" placeholder="Buscar Cliente">
                 </div>
 
-                <div>
+                <div id="btnsListadoComentarios" class="col-md-4">
                     <button type="submit" name="btnBuscar_Comentario" class="btn_BuscarComentario">Buscar</button>
-                </div>
-                <div>
+               
                     <button type="submit" <?php if (isset($_POST["Regresar_Menu"])) {
                                                 header("Location: listadoClientes.php");
                                             }?> name="Regresar_Menu" class="btn_RegresarCrearComentarios">Regresar</button>

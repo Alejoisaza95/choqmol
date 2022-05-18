@@ -23,14 +23,7 @@
       <!-- Barra de nabegación -->
       <nav class="menu">
         <ul class="nav">
-          <!-- <li><a class="nav-link active" aria-current="page" href="#">Inicio</a></li> -->
           <li><a class="nav-link" href="/choqmol/listadoClientes.php">Clientes</a>
-            <!-- Sublista de menú -->
-            <ul>
-              <!-- <li><a class="nav-link" href="/choqmol/crearCliente.php">Crear Cliente</a></li> -->
-              <!-- <li><a class="nav-link" href="/choqmol/listadoClientes.php">Listado de Clientes</a></li> -->
-              <!-- <li><a class="nav-link" href="/choqmol/gestionarCliente.php">Historial de clientes</a></li> -->
-            </ul>
           </li>
           <li><a class="nav-link" href="/choqmol/listadoUsuarios.php">Usuarios</a>
           </li>
@@ -43,7 +36,7 @@
     </div>
   </header>
 
-      <!-- Imagen página de inicio -->
+  <!-- Imagen página de inicio -->
   <div class="img">
     <img src="img/logo.jpg" alt="" height="500px" width="600px">
   </div>

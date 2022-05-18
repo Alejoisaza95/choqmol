@@ -21,22 +21,22 @@
         <h1>Listado de Usuarios</h1>
         <form id="formulario_listadoUsuarios" class="form" action="" method="post">
             <div class="row">
-                <div class="col-md-8">
+                <div id="txtBuscarUsuarios" class="col-md-6">
                     <!-- Campo buscar o filtrar Usuario -->
                     <label class="visually-hidden" for="autoSizingSelect">Buscar</label>
                     <input type="text" name="TxtBuscar_Usuario" class="form-control" placeholder="Buscar Usuario">
+                </div>
+                <div id="btnsListaUsuarios" class="col-md-4">
+                    <!-- Botón Buscar o filtrar Usuario -->
+                    <button type="submit" name="btnBuscar" class="btn_Buscar">Buscar</button>
                     <!-- Botón Crear Usuario -->
                     <button type="submit" <?php if (isset($_POST["btnCrearUsuario"])) {
                                                 header("Location: crearUsuario.php");
-                                            }?> name="btnCrearUsuario" class="btn_CrearUsuario">Crear Usuario</button>
+                                            } ?> name="btnCrearUsuario" class="btn_CrearUsuario">Crear Usuario</button>
                     <!-- Botón atrás -->
                     <button type="submit" <?php if (isset($_POST["btnAtras"])) {
-                                                header("Location: index.php");
-                                            }?> name="btnAtras" class="btnAtras_Listado">Atrás</button>
-                </div>
-                <div>
-                    <!-- Botón Buscar o filtrar Usuario -->
-                    <button type="submit" name="btnBuscar" class="btn_Buscar">Buscar</button>
+                                                header("Location: menu.php");
+                                            } ?> name="btnAtras" class="btnAtras_Listado">Atrás</button>
                 </div>
                 <!-- Tabla de listado de Usuarios -->
                 <div id="tabla">
@@ -76,8 +76,8 @@
                                     <td>{$fila['User']}</td>
                                     <td>{$fila['Password_User']}</td>
                                     <td>{$fila['RolUser']}</td>
-                                    <td><a href='modUsuario.php?id=".$fila['Id_Usuario']."'><img src='./img/icons8-Edit-32.png' alt='Edit'></a></td>
-                                    <td><a href='eliminar_Usuario.php?id=".$fila['Id_Usuario']."'><img src='./img/icons8-Trash-32.png' alt='Edit'></a></td>
+                                    <td><a href='modUsuario.php?id=" . $fila['Id_Usuario'] . "'><img src='./img/icons8-Edit-32.png' alt='Edit'></a></td>
+                                    <td><a href='eliminar_Usuario.php?id=" . $fila['Id_Usuario'] . "'><img src='./img/icons8-Trash-32.png' alt='Edit'></a></td>
                                 </tr>";
                             }
                             ?>
