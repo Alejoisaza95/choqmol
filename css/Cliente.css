@@ -70,27 +70,30 @@ a{
   text-decoration: none;
   color: white;
 }
-/* Botón Atrás de la ventana listadoClientes.php */
-.btnAtras_Listado {
-  /* float: left;
-  margin-top: -170px; */
-  margin-top: -45px;
-  float: right;
-  margin-right: -355px;
-}
 /* Botón Buscar de la ventana listadoClientes.php */
 .btn_Buscar{
-  margin-top: -48px;
+  margin-top: 40px;
   float: right;
-  margin-right: 300px;
+  margin-right: 85px;
 }
 /* Botón Crear cliente de la ventana listadoClientes.php */
 .btn_CrearCliente {
-  margin-top: -45px;
+  margin-top: 40px;
   float: right;
-  margin-right: -260px;
-} 
 
+} 
+/* Botón Historial cliente de la ventana listadoClientes.php */
+.btnHistorialClientes{
+  margin-top: 40px;
+  float: right;
+  /* margin-right: 20px; */
+}
+/* Botón Atrás de la ventana listadoClientes.php */
+.btnAtras_Listado {
+  margin-top: 40px;
+  float: right;
+ 
+}
 /* Botón Buscar de la ventana gestionarCliente.php */
 .btn_BuscarComentario{
   margin-top: -40px;
@@ -116,4 +119,10 @@ a{
   margin-bottom: 5px;
   margin-top: 25px;
   margin-left: 380px;
+}
+.btn_RegresarCrearComentarios, #Regresar_Comentarios{
+  float: right;
+  margin-top: -49px;
+  margin-right: 180px;
+
 }

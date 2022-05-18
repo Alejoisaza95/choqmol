@@ -44,7 +44,7 @@ $clientes_comentario = "SELECT * FROM clientes WHERE Id_Cliente = '$id'";
 
                     <div class='col-md-6'>
                     <label class='visually-hidden' for='autoSizingSelect'>Número de documento</label>
-                    <input type='text' readonly name='Documento_Cliente' value='$row[Num_Documento]' class=form-control' placeholder='Número de documento' required>
+                    <input type='text' readonly name='Documento_Cliente' value='$row[Num_Documento]' class='form-control' placeholder='Número de documento' required>
                     </div>
 
                     <input type='hidden' name='Correo_Cliente' value='$row[Correo]'>

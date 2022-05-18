@@ -14,10 +14,9 @@
 
 <body>
     <div id="gestionarCliente" class="contenedor">
-        <h1>Gestionar Cliente</h1>
+        <h1>Historial de Clientes</h1>
         <form id="formulario_gestionarCliente" class="form" action="gestionarCliente.php" method="post">
             <div class="row">
-
                 <div class="col-md-8">
                     <label class="visually-hidden" for="autoSizingSelect">Buscar</label>
                     <input type="text" name="txtBuscar" class="form-control" placeholder="Buscar Cliente">
@@ -26,6 +25,10 @@
                 <div>
                     <button type="submit" name="btnBuscar_Comentario" class="btn_BuscarComentario">Buscar</button>
                 </div>
+                <div>
+                    <button type="submit" name="Regresar_Menu" class="btn_RegresarCrearComentarios">Regresar</button>
+                </div>
+
                 <div id="tabla">
                     <table class="table">
                         <thead>
@@ -58,32 +61,17 @@
                                     <td>{$fila['Direccion_Cliente']}</td>
                                     <td>{$fila['Telefono_Cliente']}</td>
                                     <td>{$fila['Comentario_Cliente']}</td>
-                                    <td><a href='actualizarCliente.php?id=".$fila['Id']."'><img src='./img/icons8-Edit-32.png' alt='Edit'></a></td>
-                                    <td><a href='BorrarCliente.php?id=".$fila['Id']."'><img src='./img/icons8-Trash-32.png' alt='Edit'></a></td>
+                                    <td><a href='modComentario.php?id=".$fila['Id']."'><img src='./img/icons8-Edit-32.png' alt='Edit'></a></td>
+                                    <td><a href='eliminar_Comentario.php?id=".$fila['Id']."'><img src='./img/icons8-Trash-32.png' alt='Edit'></a></td>
                                 </tr>";
                             }
                             ?>
                         </tbody>
                     </table>
                 </div>
-                <!-- <div class="row">
-                    <div class="col-md-12">
-                        <label for="" class="form-label">Comentario</label>
-                        <textarea class="form-control" id="Comentario" rows="3"></textarea>
-                    </div>-->
-                    <div>
-                        <!-- <button type="submit" name="btnGuardarComentario" class="btn_GuardarComentario">Guardar Comentario</button> -->
-                        <button onclick="location.href='/choqmol/menu.php'" type="submit" name="Regresar_Comentarios" class="btn_RegresarComentarios">Regresar</button>
-                    </div>
-                </div> 
-            </div>
-            <br>
-            <div>
-
             </div>
         </form>
     </div>
-
 </body>
 
 </html>
