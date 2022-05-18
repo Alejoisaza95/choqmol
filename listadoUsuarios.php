@@ -1,5 +1,5 @@
 <?php
-// include 'BorrarCliente.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -24,11 +24,15 @@
                 <div class="col-md-8">
                     <!-- Campo buscar o filtrar Usuario -->
                     <label class="visually-hidden" for="autoSizingSelect">Buscar</label>
-                    <input type="text" id="txtBuscar" name="Buscar" class="form-control" placeholder="Buscar Usuario">
+                    <input type="text" name="TxtBuscar_Usuario" class="form-control" placeholder="Buscar Usuario">
                     <!-- Botón Crear Usuario -->
-                    <button type="submit" name="btnCrearUsuario" class="btn_CrearUsuario"><a href="crearUsuario_menu.php">Crear Usuario</a></button>
+                    <button type="submit" <?php if (isset($_POST["btnCrearUsuario"])) {
+                                                header("Location: crearUsuario.php");
+                                            }?> name="btnCrearUsuario" class="btn_CrearUsuario">Crear Usuario</button>
                     <!-- Botón atrás -->
-                    <button type="submit" name="btnAtras" class="btnAtras_Listado"><a href="menu.php">Atrás</button>
+                    <button type="submit" <?php if (isset($_POST["btnAtras"])) {
+                                                header("Location: index.php");
+                                            }?> name="btnAtras" class="btnAtras_Listado">Atrás</button>
                 </div>
                 <div>
                     <!-- Botón Buscar o filtrar Usuario -->
@@ -40,16 +44,15 @@
                         <thead>
                             <tr>
                                 <th scope="col">Id</th>
-                                <th scope="col">Num_Documento</th>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Apellido</th>
+                                <th scope="col">Documento</th>
                                 <th scope="col">Correo</th>
                                 <th scope="col">Direccion</th>
                                 <th scope="col">Telefono</th>
                                 <th scope="col">Usuario</th>
                                 <th scope="col">Clave</th>
                                 <th scope="col">Rol</th>
-                                <th scope="col">Estado </th>
                                 <th scope="col">Editar</th>
                                 <th scope="col">Eliminar</th>
 
@@ -58,20 +61,23 @@
                         <!-- Código php para invocar la consulta realizada a la base de datos de la tabla de usuarios-->
                         <tbody>
                             <?php
-                            include "Leer.php";
+                            include "Leer_Usuarios.php";
 
                             while ($fila = mysqli_fetch_assoc($result)) {
                                 echo "
                                 <tr>
-                                    <td>{$fila['Id_Cliente']}</td>
-                                    <td>{$fila['Num_Documento']}</td>
-                                    <td>{$fila['Nombre']}</td>
-                                    <td>{$fila['Apellido']}</td>
-                                    <td>{$fila['Correo']}</td>
-                                    <td>{$fila['Direccion']}</td>
-                                    <td>{$fila['Telefono']}</td>
-                                    <td>{$fila['Tipo_Cliente']}</td>
-                                    <td>{$fila['Estado_Cliente']}</td>
+                                    <td>{$fila['Id_Usuario']}</td>
+                                    <td>{$fila['Nombre_Usuario']}</td>
+                                    <td>{$fila['Apellido_Usuario']}</td>
+                                    <td>{$fila['Documento_Usuario']}</td>
+                                    <td>{$fila['Correo_Usuario']}</td>
+                                    <td>{$fila['Direccion_Usuario']}</td>
+                                    <td>{$fila['Telefono_Usuario']}</td>
+                                    <td>{$fila['User']}</td>
+                                    <td>{$fila['Password_User']}</td>
+                                    <td>{$fila['RolUser']}</td>
+                                    <td><a href='modUsuario.php?id=".$fila['Id_Usuario']."'><img src='./img/icons8-Edit-32.png' alt='Edit'></a></td>
+                                    <td><a href='eliminar_Usuario.php?id=".$fila['Id_Usuario']."'><img src='./img/icons8-Trash-32.png' alt='Edit'></a></td>
                                 </tr>";
                             }
                             ?>
