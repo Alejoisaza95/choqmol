@@ -28,7 +28,7 @@
                 <div>
                     <button type="submit" <?php if (isset($_POST["Regresar_Menu"])) {
                                                 header("Location: listadoClientes.php");
-                                            }?>name="Regresar_Menu" class="btn_RegresarCrearComentarios">Regresar</button>
+                                            }?> name="Regresar_Menu" class="btn_RegresarCrearComentarios">Regresar</button>
                 </div>
 
                 <div id="tabla">

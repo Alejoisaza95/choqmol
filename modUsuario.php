@@ -1,3 +1,10 @@
+<?php
+include "Conexion_BD.php";
+
+$id = $_GET["id"];
+$sql = "SELECT * FROM usuarios WHERE Id_Usuario = '$id'";
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -15,49 +22,65 @@
 <body id="bodymodUsuario">
     <div id="modUsuario" class="contenedor">
         <h1>Modificar Usuario</h1>
-        <form id="formulario_modUsuario" class="form" action="index.html" method="post">
+        <form id="formulario_modUsuario" class="form" action="procesar_Usuario.php" method="post">
             <div class="row">
-                <div class="row">
-                    <div class="col-md-6">
-                        <label class="visually-hidden" for="autoSizingSelect">Nombre</label>
-                        <input type="text" id="Nombre" class="form-control" placeholder="Nombre">
+            <?php
+                $consulta = mysqli_query($conexion, $sql);
+                while ($row = mysqli_fetch_assoc($consulta)) {
+                    echo "
+
+                    <input type='hidden' name='Id_User' value='$row[Id_Usuario]'>
+
+                    <div class='col-md-6'>
+                        <label class='visually-hidden' for='autoSizingSelect'>Nombre</label>
+                        <input type='text' name='Nombre_User' value='$row[Nombre_Usuario]' class='form-control' placeholder='Nombre' pattern='[a-zA-Z]+ && [' ']+]' required>
                     </div>
-                    <div class="col-md-6">
-                        <label class="visually-hidden" for="autoSizingSelect">Apellido</label>
-                        <input type="text" id="Apellido" class="form-control" placeholder="Apellido">
+
+                    <div class='col-md-6'>
+                        <label class='visually-hidden' for='autoSizingSelect'>Apellido</label>
+                        <input type='text' name='Apellido_User' value='$row[Apellido_Usuario]' class='form-control' placeholder='Apellido' pattern='[a-zA-Z]+ && [' ']+]' required>
                     </div>
-                    <div class="col-md-6">
-                        <label class="visually-hidden" for="autoSizingSelect">Número de documento</label>
-                        <input type="text" id="Documento" class="form-control" placeholder="Número de documento">
+
+                    <div class='col-md-6'>
+                        <label class='visually-hidden' for='autoSizingSelect'>Número de documento</label>
+                        <input type='text' name='Documento_User' value='$row[Documento_Usuario]' class='form-control' placeholder='Número de documento' required>
                     </div>
-                    <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Correo</label>
-                        <input type="email" class="form-control" id="Correo" placeholder="Correo">
+
+                    <div class='col-md-6'>
+                        <label for='inputEmail4' class='form-label'>Correo</label>
+                        <input type='email' class='form-control' name='Correo_User' value='$row[Correo_Usuario]' placeholder='Correo' required>
                     </div>
-                    <div class="col-md-6">
-                        <label for="inputAddress" class="form-label">Dirección</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Dirección">
+
+                    <div class='col-md-6'>
+                        <label for='inputAddress' class='form-label'>Dirección</label>
+                        <input type='text' class='form-control' name='Direccion_User' value='$row[Direccion_Usuario]' placeholder='Dirección' required>
                     </div>
-                    <div class="col-md-6">
-                        <label class="visually-hidden" for="autoSizingSelect">Teléfono</label>
-                        <input type="text" id="Telefono" class="form-control" placeholder="Teléfono">
+
+                    <div class='col-md-6'>
+                        <label class='visually-hidden' for='autoSizingSelect'>Teléfono</label>
+                        <input type='text' name='Telefono_User' value='$row[Telefono_Usuario]' class='form-control' placeholder='Teléfono' title='Es necesario ingresar 7 o 10 digitos' pattern='[0-9]{7,10}' required>
                     </div>
-                    <div id="Rol" class="col-md-6">
-                        <label class="visually-hidden" for="autoSizingSelect">Rol</label>
-                        <select class="form-select" id="autoSizingSelect">
-                            <option selected>Seleccione</option>
-                            <option value="1">Administrador</option>
-                            <option value="2">Vendedor</option>
-                        </select>
+
+                    <div class='col-md-6'>
+                        <label class='visually-hidden' for='autoSizingSelect'>Usuario</label>
+                        <input type='text' name='User' value='$row[User]' class='form-control' placeholder='Usuario' required>
                     </div>
-                    <div id="estadoUsuario" class="col-md-6">
-                        <label class="visually-hidden" for="autoSizingSelect">Estado</label>
-                        <select class="form-select" id="autoSizingSelect">
-                            <option selected>Seleccione</option>
-                            <option value="1">Activo</option>
-                            <option value="2">Inactivo</option>
-                        </select>
+
+                    <div class='col-md-6'>
+                    <label class='visually-hidden' for='autoSizingSelect'>Clave</label>
+                    <input type='password' name='Password_User' value='$row[Password_User]' class='form-control' placeholder='Contraseña' required>
+                </div>
+
+                    <div id='tipoCliente' class='col-md-6'>
+                    <label class='visually-hidden' for='autoSizingSelect'>Tipo de Rol</label>
+                    <select required class='form-select' name='Tipo_Rol' value='$row[RolUser]' id='autoSizingSelect' required>
+                        <option value='Administrador'>Administrador</option>
+                        <option value='Vendedor'>Vendedor</option>
+                    </select>
                     </div>
+                ";
+                }
+                ?>    
                 </div>
                 <br>
                 <!-- Botones -->
@@ -65,7 +88,7 @@
                     <!-- Modificar Usuario -->
                     <button type="submit" name="Modificar_Usuario" class="btnModUsuario">Guardar Cambios</button>
                     <!-- Regresar al menú -->
-                    <button onclick="location.href='/choqmol/menu.php'" type="submit" name="Regresar" class="btn_RegresarUsuario">Regresar</button>
+                    <button onclick="window.location.href='/listadoUsuarios.php'" type="submit" name="Regresar" class="btn_RegresarUsuario">Regresar</button>
                 </div>
         </form>
     </div>

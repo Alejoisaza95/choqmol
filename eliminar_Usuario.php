@@ -1,0 +1,15 @@
+<?php
+include 'Conexion_BD.php';
+
+$id=$_GET['id'];
+$eliminar_usuario="DELETE FROM usuarios WHERE Id_Usuario='$id'"; 
+$resultado=mysqli_query($conexion,$eliminar_usuario);
+
+if ($resultado){
+    echo "<script>alert('Se ha eliminado el usuario exitosamente');
+    window.location='/choqmol/listadoUsuarios.php'</script>";
+} else {
+    echo "<script>alert('No se pudo eliminar el usuario');
+    window.history.go(-1);</script>";
+    }
+?>

@@ -24,7 +24,7 @@ if ($resultado){
 } else {
     echo "<script>alert('No se pudo actualizar');
     window.history.go(-1);</script>";
-    }
+}
 
 if (isset($_POST["Cancelar"])){
    header ("Location: listadoClientes.php");
