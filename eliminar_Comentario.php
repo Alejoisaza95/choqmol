@@ -12,8 +12,4 @@ if ($resultado){
     echo "<script>alert('No se pudo eliminar el comentario');
     window.history.go(-1);</script>";
     }
-
-if (isset($_POST["Regresar_Menu"])){
-    header ("Location: menu.php");
-}
 ?>

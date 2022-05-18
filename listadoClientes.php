@@ -25,8 +25,6 @@
                 <div class="col-md-6">
                     <!-- Botón Buscar o filtrar Cliente -->
                     <button type="submit" name="btnBuscar" class="btn_Buscar">Buscar</button>
-                </div>
-                <div class="col-md-6">
                     <!-- Botón Crear Cliente -->
                     <button type="submit" name="btnCrearCliente" class="btn_CrearCliente"><a href="crearCliente.php">Crear Cliente</a></button>
                     <!-- Botón atrás -->

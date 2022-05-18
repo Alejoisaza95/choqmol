@@ -26,7 +26,9 @@
                     <button type="submit" name="btnBuscar_Comentario" class="btn_BuscarComentario">Buscar</button>
                 </div>
                 <div>
-                    <button type="submit" name="Regresar_Menu" class="btn_RegresarCrearComentarios">Regresar</button>
+                    <button type="submit" <?php if (isset($_POST["Regresar_Menu"])) {
+                                                header("Location: listadoClientes.php");
+                                            }?>name="Regresar_Menu" class="btn_RegresarCrearComentarios">Regresar</button>
                 </div>
 
                 <div id="tabla">
@@ -61,8 +63,8 @@
                                     <td>{$fila['Direccion_Cliente']}</td>
                                     <td>{$fila['Telefono_Cliente']}</td>
                                     <td>{$fila['Comentario_Cliente']}</td>
-                                    <td><a href='modComentario.php?id=".$fila['Id']."'><img src='./img/icons8-Edit-32.png' alt='Edit'></a></td>
-                                    <td><a href='eliminar_Comentario.php?id=".$fila['Id']."'><img src='./img/icons8-Trash-32.png' alt='Edit'></a></td>
+                                    <td><a href='modComentario.php?id=" . $fila['Id'] . "'><img src='./img/icons8-Edit-32.png' alt='Edit'></a></td>
+                                    <td><a href='eliminar_Comentario.php?id=" . $fila['Id'] . "'><img src='./img/icons8-Trash-32.png' alt='Edit'></a></td>
                                 </tr>";
                             }
                             ?>

@@ -74,25 +74,26 @@ a{
 .btn_Buscar{
   margin-top: 40px;
   float: right;
-  margin-right: 85px;
+  margin-right: 485px;
 }
 /* Botón Crear cliente de la ventana listadoClientes.php */
 .btn_CrearCliente {
-  margin-top: 40px;
+  margin-top: -48px;
   float: right;
+  margin-right: 330px;
 
 } 
 /* Botón Historial cliente de la ventana listadoClientes.php */
 .btnHistorialClientes{
-  margin-top: 40px;
+  margin-top: -48px;
   float: right;
-  /* margin-right: 20px; */
+  margin-right: 125px;
 }
 /* Botón Atrás de la ventana listadoClientes.php */
 .btnAtras_Listado {
-  margin-top: 40px;
+  margin-top: -48px;
   float: right;
- 
+  margin-right: 25px;
 }
 /* Botón Buscar de la ventana gestionarCliente.php */
 .btn_BuscarComentario{
