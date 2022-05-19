@@ -73,7 +73,8 @@ $sql = "SELECT * FROM usuarios WHERE Id_Usuario = '$id'";
 
                     <div id='tipoCliente' class='col-md-6'>
                     <label class='visually-hidden' for='autoSizingSelect'>Tipo de Rol</label>
-                    <select required class='form-select' name='Tipo_Rol' value='$row[RolUser]' id='autoSizingSelect' required>
+                    <select required class='form-select' name='Tipo_Rol' id='autoSizingSelect' required>
+                        <option selected value='$row[RolUser]'>Seleccione</option>
                         <option value='Administrador'>Administrador</option>
                         <option value='Vendedor'>Vendedor</option>
                     </select>
@@ -82,7 +83,7 @@ $sql = "SELECT * FROM usuarios WHERE Id_Usuario = '$id'";
                 }
                 ?>
                 <!-- Botones -->
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <!-- Modificar Usuario -->
                     <button type="submit" name="Modificar_Usuario" class="btnModUsuario">Guardar Cambios</button>
                     <!-- Regresar al menú -->
