@@ -82,12 +82,14 @@ $sql = "SELECT * FROM usuarios WHERE Id_Usuario = '$id'";
                 ";
                 }
                 ?>
+
+
                 <!-- Botones -->
                 <div class="col-md-5">
                     <!-- Modificar Usuario -->
                     <button type="submit" name="Modificar_Usuario" class="btnModUsuario">Guardar Cambios</button>
                     <!-- Regresar al menú -->
-                    <button onclick="window.location.href='/listadoUsuarios.php'" type="submit" name="Regresar" class="btn_RegresarUsuario">Regresar</button>
+                    <button type="submit" name="Regresar" class="btn_RegresarUsuario">Regresar</button>
                 </div>
             </div>
 

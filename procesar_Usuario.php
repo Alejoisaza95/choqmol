@@ -26,3 +26,7 @@ if ($resultado){
     echo "<script>alert('No se pudo actualizar el usuario');
     window.history.go(-1);</script>";
 }
+
+if (isset($_POST["Regresar"])){
+    header ("Location: listadoUsuarios.php");
+ }
