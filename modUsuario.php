@@ -1,6 +1,6 @@
 <?php
 include "Conexion_BD.php";
-
+include("session.php");
 $id = $_GET["id"];
 $sql = "SELECT * FROM usuarios WHERE Id_Usuario = '$id'";
 ?>

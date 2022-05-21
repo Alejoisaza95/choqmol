@@ -1,5 +1,6 @@
 <?php
 include "Conexion_BD.php";
+include("session.php");
 $id_modificar= $_GET['id'];
 $sql_mod_comentario = "SELECT * FROM comentarios_clientes WHERE Id = '$id_modificar'";
 ?>

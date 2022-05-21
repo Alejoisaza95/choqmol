@@ -1,6 +1,7 @@
 <?php
-include "Conexion_BD.php";
-include "guardar_Comentario.php";
+include ("Conexion_BD.php");
+include ("guardar_Comentario.php");
+include ("session.php");
 $id= $_GET['id'];
 $clientes_comentario = "SELECT * FROM clientes WHERE Id_Cliente = '$id'";
 ?>

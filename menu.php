@@ -1,3 +1,7 @@
+<?php
+include("session.php");
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -30,7 +34,7 @@
         </ul>
         <!-- Botón de cerrar sesión -->
         <div class="Salir">
-          <button onclick="location.href='/choqmol/index.php'" type="submit" name="Cerrar_Sesion" id="Salir_Sistema" class="btn btn-primary">Cerrar Sesión</button <?php include 'Cierre.php' ?>>
+          <button onclick="location.href='/choqmol/cerrar_sesion.php'" type="submit" name="Cerrar_Sesion" id="Salir_Sistema" class="btn btn-primary">Cerrar Sesión</button>
         </div>
       </nav>
     </div>

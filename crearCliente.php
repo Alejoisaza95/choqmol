@@ -1,5 +1,6 @@
 <?php
 include("registrar_Cliente.php");
+include("session.php");
 ?>
 <!DOCTYPE html>
 <html lang="es">
