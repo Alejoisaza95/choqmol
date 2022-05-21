@@ -1,6 +1,7 @@
 <?php
 include 'Conexion_BD.php';
 
+if (isset($_POST["Modificar_Usuario"])){
 $id=$_POST['Id_User'];
 $nombre = $_POST['Nombre_User'];
 $apellido = $_POST['Apellido_User'];
@@ -26,7 +27,4 @@ if ($resultado){
     echo "<script>alert('No se pudo actualizar el usuario');
     window.history.go(-1);</script>";
 }
-
-if (isset($_POST["Regresar"])){
-    header ("Location: listadoUsuarios.php");
- }
+}

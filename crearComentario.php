@@ -1,8 +1,8 @@
 <?php
-include ("Conexion_BD.php");
-include ("guardar_Comentario.php");
-include ("session.php");
-$id= $_GET['id'];
+include("Conexion_BD.php");
+include("guardar_Comentario.php");
+include("session.php");
+$id = $_GET['id'];
 $clientes_comentario = "SELECT * FROM clientes WHERE Id_Cliente = '$id'";
 ?>
 
@@ -26,9 +26,9 @@ $clientes_comentario = "SELECT * FROM clientes WHERE Id_Cliente = '$id'";
         <h1>Agregar Comentario</h1>
         <form id="formulario_gestionarCliente" class="form" action="guardar_Comentario.php" method="post">
             <div class="row">
-            <?php
-            $consulta = mysqli_query($conexion, $clientes_comentario);
-            while ($row = mysqli_fetch_assoc($consulta)) {
+                <?php
+                $consulta = mysqli_query($conexion, $clientes_comentario);
+                while ($row = mysqli_fetch_assoc($consulta)) {
                     echo "
 
                     <input type='hidden' name='Id_Cliente' value='$row[Id_Cliente]'>
@@ -57,21 +57,21 @@ $clientes_comentario = "SELECT * FROM clientes WHERE Id_Cliente = '$id'";
                 ";
                 }
                 ?>
-                
+
                 <div class="col-md-12">
                     <label for="" class="form-label">Comentario</label>
                     <textarea class="form-control" name="TxtComentario" rows="3" required></textarea>
                 </div>
 
-                <div> 
+                <div>
                     <button type="submit" name="btnGuardarComentario" class="btn_GuardarComentario">Guardar Comentario</button>
-                    <button onclick="location.href='/choqmol/listadoClientes.php'" type="submit" name="Regresar_Comentarios" class="btn_RegresarComentarios">Regresar</button>
                 </div>
             </div>
-            <br>
-            <div>
-            </div>
         </form>
+        <div>
+            <button onclick="location.href='/choqmol/listadoClientes.php'" type="submit" name="Regresar_Comentarios" class="btn_RegresarComentarios">Regresar</button>
+        </div>
     </div>
 </body>
+
 </html>

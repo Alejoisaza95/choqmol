@@ -43,7 +43,14 @@ button {
   border-style: groove;
   border-color: rgb(182, 247, 202); 
 }
-/* Formato de listado de clientes de la ventana listadoClientes.php */
+
+/* Titulo de la tabla listadoClientes.php */
+#tabla th{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(18, 65, 26);
+  font-size: 18px;
+}
+/* Formato de las tablas listado de clientes y listado de comentarios */
 #tabla {
   background-color: aliceblue;
   margin-top: 20px;
@@ -57,12 +64,24 @@ button {
   margin-top: 25px;
   margin-left: 350px;
 }
-/* Botón atrás de la ventana crearCliente.php y actualizarCliente.php */
-.btn_RegresarCliente, #Regresar{
+/* Botón atrás de la ventana crearCliente.php*/
+.btn_RegresarCrearCliente, #Regresar{
   float: right;
+  margin-top: 22px;
+  margin-right: 380px;
+}
+/* Botón Guardar Cambios de la ventana actualizarCliente.php */
+.btnModificar_Cliente, #Modificar_Cliente{
+  float: left;
   margin-bottom: 5px;
   margin-top: 25px;
-  margin-right: 380px;
+  margin-left: 380px;
+}
+/* Botón Regresar de la ventana actualizarCliente.php */
+.btn_RegresarCliente, #Cancelar{
+  float: right;
+  margin-top: -60px;
+  margin-right: 450px;
 }
 /* Quitar subrayado y formato de etiqueta a en la ventana listadoClientes.php (De botones Crear Cliente y Atrás */
 a{ 
@@ -97,11 +116,13 @@ a{
   float: right;
   margin-right: 125px;
 }
+/* Botón Atras cliente de la ventana listadoClientes.php */
 .btnAtras_Listado{
   margin-top: -48px;
   float: right;
   margin-right: -290px;
 }
+/* Barra de texto de la ventana listadoClientes.php */
 #txtBuscarComentario{
   margin-left: 150px;
 }
@@ -114,37 +135,16 @@ a{
 .btn_BuscarComentario{
  margin-right: 15px;
 }
-/* Botón Atrás de la ventana listadoClientes.php */
-.btn_RegresarCrearComentarios {
-  /* margin-top: -48px;
-  float: right;
-  margin-right: -280px; */
-}
 
-/* Botón Guardar Comentario de la ventana gestionarCliente */
+/* Botón Guardar Comentario de la ventana crearComentario.php  y modComentario.php*/
 .btn_GuardarComentario, #btnGuardarComentario{
   margin-left: 350px;
   margin-bottom: 0px;
   margin-top: 15px;
-  margin-right: 215px;
 }
-/* Titulo de la tabla listadoClientes.php */
-#tabla th{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(18, 65, 26);
-  font-size: 18px;
-}
-/* Botón Guardar Cambios de la ventana actualizarCliente.php */
-.btnModificar_Cliente, #Modificar_Cliente{
-  float: left;
-  margin-bottom: 5px;
-  margin-top: 25px;
-  margin-left: 380px;
-}
-/* .btn_RegresarCrearComentarios, #Regresar_Comentarios{
+/* Botón Regresar de la ventana crearComentario.php  y modComentario.php */
+.btn_RegresarComentarios, #Regresar_Comentarios{
   float: right;
-  margin-top: -49px;
-  margin-right: 0px;
-
-} */
-
+  margin-top: -55px;
+  margin-right: 500px;
+}

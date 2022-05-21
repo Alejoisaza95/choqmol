@@ -73,8 +73,8 @@ $sql = "SELECT * FROM usuarios WHERE Id_Usuario = '$id'";
 
                     <div id='tipoCliente' class='col-md-6'>
                     <label class='visually-hidden' for='autoSizingSelect'>Tipo de Rol</label>
-                    <select required class='form-select' name='Tipo_Rol' id='autoSizingSelect' required>
-                        <option selected value='$row[RolUser]'>Seleccione</option>
+                    <select required class='form-select' name='Tipo_Rol' id='autoSizingSelect'>
+                        <option selected value=''>Seleccione</option>
                         <option value='Administrador'>Administrador</option>
                         <option value='Vendedor'>Vendedor</option>
                     </select>
@@ -89,11 +89,12 @@ $sql = "SELECT * FROM usuarios WHERE Id_Usuario = '$id'";
                     <!-- Modificar Usuario -->
                     <button type="submit" name="Modificar_Usuario" class="btnModUsuario">Guardar Cambios</button>
                     <!-- Regresar al menú -->
-                    <button type="submit" name="Regresar" class="btn_RegresarUsuario">Regresar</button>
+                    
                 </div>
             </div>
-
+            
         </form>
+        <button  onclick="location.href='/choqmol/listadoUsuarios.php'" type="submit" name="Regresar" class="btn_RegresarUsuario">Regresar</button>
     </div>
 
 </body>

@@ -86,10 +86,12 @@ $clientes = "SELECT * FROM clientes WHERE Id_Cliente = '$id'";
             </div>
             <br>
             <div>
-                <button type="submit" name="Modificar_Cliente"  class="btnModificar_Cliente">Guardar</button>
-                <button type="submit" name="Cancelar" class="btn_RegresarCliente">Cancelar</button>
+                <button type="submit" name="Modificar_Cliente" class="btnModificar_Cliente">Guardar</button>
             </div>
         </form>
+        <div>
+            <button onclick="location.href='/choqmol/listadoClientes.php'" type="submit" name="Cancelar" class="btn_RegresarCliente">Cancelar</button>
+        </div>
     </div>
 
 </body>

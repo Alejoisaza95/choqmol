@@ -1,7 +1,7 @@
 <?php
 include "Conexion_BD.php";
 include "session.php";
-$id_modificar= $_GET['id'];
+$id_modificar = $_GET['id'];
 $sql_mod_comentario = "SELECT * FROM comentarios_clientes WHERE Id = '$id_modificar'";
 ?>
 
@@ -25,9 +25,9 @@ $sql_mod_comentario = "SELECT * FROM comentarios_clientes WHERE Id = '$id_modifi
         <h1>Modificar Comentario</h1>
         <form id="formulario_gestionarCliente" class="form" action="procesar_Comentario.php" method="post">
             <div class="row">
-            <?php
-            $consulta = mysqli_query($conexion, $sql_mod_comentario);
-            while ($row = mysqli_fetch_assoc($consulta)) {
+                <?php
+                $consulta = mysqli_query($conexion, $sql_mod_comentario);
+                while ($row = mysqli_fetch_assoc($consulta)) {
                     echo "
 
                     <input type='hidden' name='Id_Cliente' value='$row[Id]'>
@@ -54,15 +54,16 @@ $sql_mod_comentario = "SELECT * FROM comentarios_clientes WHERE Id = '$id_modifi
                 ";
                 }
                 ?>
-                <div> 
+                <div>
                     <button type="submit" name="btnGuardarComentario" class="btn_GuardarComentario">Guardar Cambios</button>
-                    <button onclick="location.href='/choqmol/gestionarCliente.php'" type="submit" name="Regresar_Comentarios" class="btn_RegresarComentarios">Regresar</button>
                 </div>
             </div>
-            <br>
-            <div>
-            </div>
         </form>
+        <div>
+            <button onclick="location.href='/choqmol/gestionarCliente.php'" type="submit" name="Regresar_Comentarios" class="btn_RegresarComentarios">Regresar</button>
+        </div>
     </div>
+
 </body>
+
 </html>
