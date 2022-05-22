@@ -103,8 +103,10 @@ a{
   margin-right: 100px;
 }
 /* Botón atrás de la ventana modUsuario.php */
-.btn_RegresarUsuario {
-  /* margin-top: 35px; */
+.btn_RegresarUsuario{
+  float: right;
+  margin-top: -55px;
+  margin-right: 200px;
 }
 /* Botón Crear Usaurio de la ventan crearUsuario.php */
 .btnCrearUsuario{

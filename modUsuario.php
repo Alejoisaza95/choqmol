@@ -88,15 +88,13 @@ $sql = "SELECT * FROM usuarios WHERE Id_Usuario = '$id'";
                 <div class="col-md-5">
                     <!-- Modificar Usuario -->
                     <button type="submit" name="Modificar_Usuario" class="btnModUsuario">Guardar Cambios</button>
-                    <!-- Regresar al menú -->
-                    
                 </div>
             </div>
-            
         </form>
-        <button  onclick="location.href='/choqmol/listadoUsuarios.php'" type="submit" name="Regresar" class="btn_RegresarUsuario">Regresar</button>
+        <div>
+            <button onclick="location.href='/choqmol/listadoUsuarios.php'" type="submit" name="Regresar" class="btn_RegresarUsuario">Regresar</button>
+        </div>
     </div>
-
 </body>
 
 </html>
