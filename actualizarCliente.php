@@ -24,7 +24,9 @@ $clientes = "SELECT * FROM clientes WHERE Id_Cliente = '$id'";
         <h1>Modificar Cliente</h1>
         <form id="formulario_modCliente" class="form" action="Procesar_Clientes.php" method="post">
             <div class="row">
-                <?php
+               <!-- Código que trae a los campos del formulario los 
+               datos del cliente consignados en la Base de Datos, para su modificación.   -->
+               <?php
                 $consulta = mysqli_query($conexion, $clientes);
                 while ($row = mysqli_fetch_assoc($consulta)) {
                     echo "
@@ -85,10 +87,12 @@ $clientes = "SELECT * FROM clientes WHERE Id_Cliente = '$id'";
                 ?>
             </div>
             <br>
+            <!-- Botón para guardar los cambios realizados en la información del cliente  -->
             <div>
                 <button type="submit" name="Modificar_Cliente" class="btnModificar_Cliente">Guardar</button>
             </div>
         </form>
+        <!-- Botón para devolverse a la página de Listado de Clientes  -->
         <div>
             <button onclick="location.href='/choqmol/listadoClientes.php'" type="submit" name="Cancelar" class="btn_RegresarCliente">Cancelar</button>
         </div>

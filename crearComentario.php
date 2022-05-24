@@ -26,6 +26,9 @@ $clientes_comentario = "SELECT * FROM clientes WHERE Id_Cliente = '$id'";
         <h1>Agregar Comentario</h1>
         <form id="formulario_gestionarCliente" class="form" action="guardar_Comentario.php" method="post">
             <div class="row">
+
+                <!-- Código que trae a los campos del formulario algunos 
+                de los datos del cliente consignados en la Base de Datos.  -->
                 <?php
                 $consulta = mysqli_query($conexion, $clientes_comentario);
                 while ($row = mysqli_fetch_assoc($consulta)) {
@@ -47,6 +50,10 @@ $clientes_comentario = "SELECT * FROM clientes WHERE Id_Cliente = '$id'";
                     <label class='visually-hidden' for='autoSizingSelect'>Número de documento</label>
                     <input type='text' readonly name='Documento_Cliente' value='$row[Num_Documento]' class='form-control' placeholder='Número de documento' required>
                     </div>
+                    <div class='col-md-6'>
+                    <label class='visually-hidden' for='autoSizingSelect'>Fecha de gestión</label>
+                    <input type='date' name='fechaComentario'class='form-control' placeholder='Fecha' required>
+                    </div>
 
                     <input type='hidden' name='Correo_Cliente' value='$row[Correo]'>
 
@@ -57,17 +64,18 @@ $clientes_comentario = "SELECT * FROM clientes WHERE Id_Cliente = '$id'";
                 ";
                 }
                 ?>
-
+                <!-- Campo para ingresar Comentarios sobre la gestión del cliente -->
                 <div class="col-md-12">
                     <label for="" class="form-label">Comentario</label>
                     <textarea class="form-control" name="TxtComentario" rows="3" required></textarea>
                 </div>
-
+                <!-- Botón Guardar Comentario -->
                 <div>
                     <button type="submit" name="btnGuardarComentario" class="btn_GuardarComentario">Guardar Comentario</button>
                 </div>
             </div>
         </form>
+        <!-- Botón para regresar a la pantalla de Listado Clientes-->
         <div>
             <button onclick="location.href='/choqmol/listadoClientes.php'" type="submit" name="Regresar_Comentarios" class="btn_RegresarComentarios">Regresar</button>
         </div>

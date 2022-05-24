@@ -46,6 +46,7 @@ include("session.php");
                                 <th scope="col">Dirección</th>
                                 <th scope="col">Teléfono</th>
                                 <th scope="col">Comentario</th>
+                                <th scope="col">Fecha Gestion</th>
                                 <th scope="col">Editar</th>
                                 <th scope="col">Eliminar</th>
 
@@ -66,6 +67,7 @@ include("session.php");
                                     <td>{$fila['Direccion_Cliente']}</td>
                                     <td>{$fila['Telefono_Cliente']}</td>
                                     <td>{$fila['Comentario_Cliente']}</td>
+                                    <td>{$fila['Fecha_Comentario']}</td>
                                     <td><a href='modComentario.php?id=" . $fila['Id'] . "'><img src='./img/icons8-Edit-32.png' alt='Edit'></a></td>
                                     <td><a href='eliminar_Comentario.php?id=" . $fila['Id'] . "'><img src='./img/icons8-Trash-32.png' alt='Edit'></a></td>
                                 </tr>";

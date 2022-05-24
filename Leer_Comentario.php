@@ -1,6 +1,7 @@
 <?php
 include "Conexion_BD.php";
 
+//Código que permite filtrar los  registros de la tabla que se encuentra en la pantalla Historial de Clientes. 
 if(!isset($_POST['txtBuscar'])){
 
     $_POST["txtBuscar"] = "";

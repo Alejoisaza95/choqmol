@@ -1,4 +1,4 @@
-
+<!-- Código para la conexión a la base de datos en PHPMyAdmin -->
 <?php
 
 $server="localhost";

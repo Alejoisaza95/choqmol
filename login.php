@@ -1,7 +1,7 @@
 <?php
 include 'Conexion_BD.php';
 
-
+//Código que permite asociar el usuario y contraseña almacenada en los campos con los datos almacenados en la Base de Datos. 
 if (isset($_POST["Ingresar"])) {
 
   session_start();

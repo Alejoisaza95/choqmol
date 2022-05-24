@@ -24,6 +24,9 @@ $sql = "SELECT * FROM usuarios WHERE Id_Usuario = '$id'";
         <h1>Modificar Usuario</h1>
         <form id="formulario_modUsuario" class="form" action="procesar_Usuario.php" method="post">
             <div class="row">
+
+            <!-- Código que realiza consulta en Base Datos y trae a los campos del formulario, cada uno de los 
+                datos requeridos para su posterior modificación. -->
                 <?php
                 $consulta = mysqli_query($conexion, $sql);
                 while ($row = mysqli_fetch_assoc($consulta)) {

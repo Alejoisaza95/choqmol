@@ -1,6 +1,7 @@
 <?php
 include "Conexion_BD.php";
 
+//Código que permite filtrar los  registros de la tabla que se encuentra en la pantalla Listado de Clientes
 if(!isset($_POST['Buscar'])){
 
     $_POST["Buscar"] = "";

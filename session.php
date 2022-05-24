@@ -1,3 +1,4 @@
+<!-- Código que permite abrir una sesión para ingresar al menú principal del programa.-->
 <?php
 session_start();
    

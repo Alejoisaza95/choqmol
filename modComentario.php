@@ -25,6 +25,10 @@ $sql_mod_comentario = "SELECT * FROM comentarios_clientes WHERE Id = '$id_modifi
         <h1>Modificar Comentario</h1>
         <form id="formulario_gestionarCliente" class="form" action="procesar_Comentario.php" method="post">
             <div class="row">
+
+            <!-- Código que realiza consulta en Base Datos y trae a los campos del formulario, cada uno de los 
+                datos requeridos para su posterior modificación. -->
+
                 <?php
                 $consulta = mysqli_query($conexion, $sql_mod_comentario);
                 while ($row = mysqli_fetch_assoc($consulta)) {
@@ -54,11 +58,13 @@ $sql_mod_comentario = "SELECT * FROM comentarios_clientes WHERE Id = '$id_modifi
                 ";
                 }
                 ?>
+                <!-- Botón para guardar los cambios realizados en los comentarios del cliente -->
                 <div>
                     <button type="submit" name="btnGuardarComentario" class="btn_GuardarComentario">Guardar Cambios</button>
                 </div>
             </div>
         </form>
+        <!-- Botón para regresar a la pantalla Historial de Clientes  -->
         <div>
             <button onclick="location.href='/choqmol/gestionarCliente.php'" type="submit" name="Regresar_Comentarios" class="btn_RegresarComentarios">Regresar</button>
         </div>
