@@ -44,7 +44,7 @@ button {
   border-color: rgb(182, 247, 202); 
 }
 
-/* Titulo de la tabla listadoClientes.php */
+/* Titulos de las tablas listadoClientes.php y gestionarClientes.php*/
 #tabla th{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(18, 65, 26);

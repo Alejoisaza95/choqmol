@@ -22,8 +22,6 @@ include("session.php");
     <div class="contenedor">
       <!-- Titulo -->
       <h1 class="tutuloMenu">CRM CHOQUETMOL</h1>
-      <!-- <input type="checkbox" id="menu_bar"> -->
-      <!-- <label class="fa fa-bars" for="menu_bar"></label> -->
       <!-- Barra de nabegación -->
       <nav class="menu">
         <ul class="nav">
