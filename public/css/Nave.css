@@ -1,0 +1,89 @@
+/* Color de la pagína */
+body {
+  margin: 0px;
+}
+/* Títulos */
+h1 {
+  text-align: center;
+  font-size: 80px;
+  color: rgb(249, 131, 12);
+}
+/* Formato clase .form */
+.form {
+  float: right;
+  margin-left: 100px;
+  margin-right: 50px;
+  font-size: 30px;
+  color: black;
+  padding: 5px;
+}
+/* Formaro de formulario modNave.php */
+#formulario_modNave {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-right: 50px;
+  color: rgb(35, 66, 47);
+}
+/* Formato subtitulos */
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: black;
+  font-size: 30px;
+}
+/* Botones */
+button {
+  background-color: #de621b;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-style: none;
+  border-color: rgb(182, 247, 202); 
+  border-radius: 15px;
+}
+button:hover{
+  background-color: rgb(23, 141, 72);
+}
+
+/* Botón crear Nave de la ventana crearNave.php */
+.btnCrear_Nave, #Crear_Nave{
+  float: left;
+  margin-bottom: 5px;
+  margin-top: 25px;
+  margin-left: 350px;
+}
+/* Botón atrás de la ventana crearNave.php*/
+.btn_RegresarCrearNave, #Regresar{
+  float: right;
+  margin-top: 22px;
+  margin-right: 380px;
+}
+/* Botón Guardar Cambios de la ventana modNave.php */
+.btnModificar_Nave, #Modificar_Nave{
+  float: left;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  margin-left: 450px;
+}
+/* Botón Regresar de la ventana modNave.php */
+.btn_RegresarInvantario, #Cancelar{
+  float: right;
+  margin-top: -55px;
+  margin-right: 500px;
+}
+/* Quitar subrayado y formato de etiqueta a */
+a{ 
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+input:hover{
+  border-color: rgb(7, 184, 190) ;
+}

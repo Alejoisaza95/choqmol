@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color: rgb(249, 131, 12);
+}
+
+/* Formato clase .form */
+.form {
+    float: right;
+    margin-left: 100px;
+    margin-right: 50px;
+    font-size: 30px;
+    color: black;
+    padding: 5px;
+}
+
+/* Titulos de la tabla*/
+#tabla th {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+/* Formato de la tabla */
+#tabla {
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: medium;
+    border-radius: 15px;
+}
+
+button {
+    background-color: #de621b;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-style: none;
+    border-color: rgb(182, 247, 202);
+    border-radius: 15px;
+}
+button:hover{
+    background-color: rgb(23, 141, 72);
+  }
+/* Quitar subrayado y formato de etiqueta a */
+a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+
+/* texbox Buscar de la ventana inventario.php */
+#buscarNaves {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+/* margin de los Botones de la ventana inventario.php */
+#btnsInventario {
+    margin-left: 15px;
+}
+
+/* Botón Buscar de la ventana inventario.php */
+.btn_Buscar {
+    margin-top: 40px;
+    float: right;
+    margin-right: 270px;
+}
+
+/* Botón Crear Nave de la ventana inventario.php */
+.btn_CrearNave {
+    margin-top: -45px;
+    float: right;
+    margin-right: 130px;
+
+}
+
+/* Barra de texto de la ventana inventario.php */
+#txtBuscar{
+    margin-left: 150px;
+  }
+input:hover {
+    border-color: rgb(7, 184, 190);
+}
