@@ -1,0 +1,55 @@
+/* Color de la ventana Login */
+body {
+  background: linear-gradient(to bottom, rgb(43, 201, 38), white);
+  background: linear-gradient(to left, rgb(70, 116, 68), rgb(161, 212, 119));
+}
+/* Título de la ventana */
+h1 {
+  text-align: center;
+  font-size: 120px;
+  color: aliceblue;
+}
+/* Formato del formulario Login */
+.form {
+  float: right;
+}
+#formulario_login {
+  text-align: left;
+  font-size: 30px;
+  margin-left: 0%;
+  margin-right: 25%;
+  margin-top: -25%;
+  color: aliceblue;
+}
+/* Imagen del formulario Login */
+img {
+  margin-left: 20%;
+  border-bottom-left-radius: 5%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-style: outset;
+  border-color: rgb(159, 255, 188);
+}
+/* Botones */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-top: 50px;
+  border-bottom-left-radius: 5%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-style: groove;
+  border-color: rgb(182, 247, 202);
+}
+.btnIngresar {
+  margin-left: 150px;
+  margin-top: 15px;
+}
